@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">P2Onboarding</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descripcion1">Comparte tus experiencias con otros usuarios</string>
+    <string name="descripcion2">Envianos tus sugerencias para mejorar la app</string>
+    <string name="descripcion3">Revisa mas de la historia de la universidad</string>
+    <string name="descripcion5">Escanea los codigos QR en los principales puntos de la universidad</string>
+</resources>
