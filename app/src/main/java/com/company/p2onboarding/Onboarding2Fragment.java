@@ -36,8 +36,9 @@ public class Onboarding2Fragment extends Fragment {
         botonFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Onboarding2Fragment.this.getActivity().getBaseContext(), activity_principal.class);
-                startActivity(intent);
+                navController.navigate(R.id.action_onboarding2Fragment_to_inicioFragment);
+                //Intent intent = new Intent(Onboarding2Fragment.this.getActivity().getBaseContext(), activity_principal.class);
+                //startActivity(intent);
             }
         });
     }
