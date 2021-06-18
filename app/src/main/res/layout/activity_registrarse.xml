@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="244dp"
         android:gravity="center"
+        android:onClick="registrarUsuario"
         android:text="@string/btn_registrarse_sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
