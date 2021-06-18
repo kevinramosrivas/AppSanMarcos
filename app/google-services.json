@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313011140085",
+    "project_id": "app-san-marcos",
+    "storage_bucket": "app-san-marcos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313011140085:android:eceb29645b386fce6a1cbc",
+        "android_client_info": {
+          "package_name": "com.company.p2onboarding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313011140085-m9lu4khlfmo5c426absau8eqo2bac5m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDorz8vBW6HUYYE54TcuVReYewCd9-a1Aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313011140085-m9lu4khlfmo5c426absau8eqo2bac5m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
