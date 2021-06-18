@@ -6,4 +6,8 @@
     <string name="descripcion2">Envianos tus sugerencias para mejorar la app</string>
     <string name="descripcion3">Revisa mas de la historia de la universidad</string>
     <string name="descripcion5">Escanea los codigos QR en los principales puntos de la universidad</string>
+    <string name="iniciarSesionPantalla">INICIAR SESION</string>
+    <string name="registrarPantalla">REGISTRAR</string>
+    <string name="btn_iniciar_sesion">INICIAR SESION</string>
+    <string name="btn_registrarse_sesion">REGISTRAR</string>
 </resources>
