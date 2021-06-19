@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,8 +25,8 @@ public class RegistrarseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
         mAuth = FirebaseAuth.getInstance();
-        correo = findViewById(R.id.correo);
-        contrasena = findViewById(R.id.contrasena);
+        correo = findViewById(R.id.correoI);
+        contrasena = findViewById(R.id.contrasenaI);
         contrasenaConfirmacion = findViewById(R.id.contrasenaConfirmacion);
     }
     @Override
