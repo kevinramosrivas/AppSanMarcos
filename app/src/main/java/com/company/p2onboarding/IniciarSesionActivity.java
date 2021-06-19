@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,6 +21,9 @@ public class IniciarSesionActivity extends AppCompatActivity {
     private EditText correo;
     private EditText contrasena;
     private FirebaseAuth mAuth;
+    private Button mButtonLogin;
+    private String correoString;
+    private String contrasenaString;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +31,41 @@ public class IniciarSesionActivity extends AppCompatActivity {
         correo =  findViewById(R.id.correoI);
         contrasena = findViewById(R.id.contrasenaI);
         mAuth = FirebaseAuth.getInstance();
+        mButtonLogin = (Button) findViewById(R.id.iniciarSesionBtn);
+
+        mButtonLogin.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                correoString = correo.getText().toString();
+                contrasenaString = contrasena.getText().toString();
+                if(!correoString.isEmpty() && !contrasenaString.isEmpty()){
+                    loginUser();
+                }
+                else{
+                    Toast.makeText(IniciarSesionActivity.this,"Complete los campos",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
     }
+    private void loginUser(){
+        mAuth.signInWithEmailAndPassword(correoString,contrasenaString).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    startActivity(new Intent(IniciarSesionActivity.this,HomeAppActivity.class));
+                    finish();
+                }
+                else{
+                    Toast.makeText(IniciarSesionActivity.this,"No se pudo iniciar la sesion",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+    /*
     @Override
+
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -59,4 +95,5 @@ public class IniciarSesionActivity extends AppCompatActivity {
                     }
                 });
     }
+    */
 }

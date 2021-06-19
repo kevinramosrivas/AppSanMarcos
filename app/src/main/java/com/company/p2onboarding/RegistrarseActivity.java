@@ -14,17 +14,24 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegistrarseActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText correo;
     private EditText contrasena;
     private EditText contrasenaConfirmacion;
+    DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
         mAuth = FirebaseAuth.getInstance();
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         correo = findViewById(R.id.correoI);
         contrasena = findViewById(R.id.contrasenaI);
         contrasenaConfirmacion = findViewById(R.id.contrasenaConfirmacion);
@@ -43,12 +50,26 @@ public class RegistrarseActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
+                                Map<String,Object> map = new HashMap<>();
+                                map.put("correo",correo.getText().toString());
+                                map.put("contrasena",contrasena.getText().toString());
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "signInWithCustomToken:success");
-                                FirebaseUser user = mAuth.getCurrentUser();
-                                Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
-                                Intent i = new Intent(getApplicationContext(),MainActivity2.class);
-                                startActivity(i);
+                                String id = mAuth.getCurrentUser().getUid();
+                                mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task2) {
+                                        if(task2.isSuccessful()){
+                                            Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
+                                            Intent i = new Intent(getApplicationContext(),MainActivity2.class);
+                                            startActivity(i);
+                                        }
+                                        else{
+                                            Toast.makeText(RegistrarseActivity.this,"no se crearon los datos correctamente",Toast.LENGTH_LONG).show();
+                                        }
+                                    }
+                                });
+                                //FirebaseUser user = mAuth.getCurrentUser();
                                 //updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
