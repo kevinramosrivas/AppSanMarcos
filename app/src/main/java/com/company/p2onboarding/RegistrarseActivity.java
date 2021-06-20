@@ -51,7 +51,7 @@ public class RegistrarseActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 Map<String,Object> map = new HashMap<>();
-                                map.put("correo",correo.getText().toString());
+                                map.put("correo",correo.getText().toString().trim());
                                 map.put("contrasena",contrasena.getText().toString());
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "signInWithCustomToken:success");

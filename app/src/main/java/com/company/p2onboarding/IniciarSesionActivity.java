@@ -39,7 +39,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                correoString = correo.getText().toString();
+                correoString = correo.getText().toString().trim();
                 contrasenaString = contrasena.getText().toString();
                 if(!correoString.isEmpty() && !contrasenaString.isEmpty()){
                     loginUser();
