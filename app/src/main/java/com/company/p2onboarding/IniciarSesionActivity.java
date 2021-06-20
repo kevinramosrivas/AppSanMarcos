@@ -22,6 +22,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
     private EditText contrasena;
     private FirebaseAuth mAuth;
     private Button mButtonLogin;
+    private Button mButtonResetPassword;
     private String correoString;
     private String contrasenaString;
     @Override
@@ -32,6 +33,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
         contrasena = findViewById(R.id.contrasenaI);
         mAuth = FirebaseAuth.getInstance();
         mButtonLogin = (Button) findViewById(R.id.iniciarSesionBtn);
+        mButtonResetPassword = (Button) findViewById(R.id.btnSendToResestPassword);
 
         mButtonLogin.setOnClickListener(new View.OnClickListener(){
 
@@ -45,6 +47,12 @@ public class IniciarSesionActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(IniciarSesionActivity.this,"Complete los campos",Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        mButtonResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(IniciarSesionActivity.this,ResetPasswordActivity.class));
             }
         });
 
@@ -63,6 +71,9 @@ public class IniciarSesionActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    //ESTE CODIGO ES DE UNA ANTERIOR IMPLEMENTACION XD NO LO BORREN TODAVIA
     /*
     @Override
 

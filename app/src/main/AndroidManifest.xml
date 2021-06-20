@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeAppActivity"></activity>
+        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".HomeAppActivity" />
         <activity android:name=".RegistrarseActivity" />
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".MainActivity2" />

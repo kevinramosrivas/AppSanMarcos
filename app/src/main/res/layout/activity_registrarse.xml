@@ -14,12 +14,12 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Contraseña"
+        android:hint="@string/contrasenaText"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correoI" />
+        app:layout_constraintTop_toBottomOf="@+id/correoI"/>
 
     <Button
         android:id="@+id/iniciarSesionBtn"
@@ -43,7 +43,7 @@
         android:layout_marginTop="180dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Correo"
+        android:hint="@string/correoText"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -52,14 +52,15 @@
 
     <EditText
         android:id="@+id/contrasenaConfirmacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="254dp"
+        android:layout_height="41dp"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="Confirmacion de contraseña"
+        android:gravity="center"
+        android:hint="@string/confirmarContrasenaText"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contrasenaI" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaI"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
