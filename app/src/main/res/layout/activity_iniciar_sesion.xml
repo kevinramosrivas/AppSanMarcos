@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/fondo_login"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_login"
     tools:context=".IniciarSesionActivity">
 
     <EditText
@@ -42,7 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
+
         android:ems="10"
+
         android:gravity="center"
         android:hint="@string/correoText"
         android:inputType="textPersonName"
@@ -64,5 +66,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn"
         app:layout_constraintVertical_bias="0.11" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
