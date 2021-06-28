@@ -61,7 +61,7 @@ public class RegistrarseActivity extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<Void> task2) {
                                         if(task2.isSuccessful()){
                                             Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
-                                            Intent i = new Intent(getApplicationContext(),MainActivity2.class);
+                                            Intent i = new Intent(getApplicationContext(),IniciarSesionActivity.class);
                                             startActivity(i);
                                         }
                                         else{

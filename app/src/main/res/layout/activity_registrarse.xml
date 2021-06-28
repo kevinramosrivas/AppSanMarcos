@@ -25,20 +25,18 @@
 
     <Button
         android:id="@+id/iniciarSesionBtn"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="72dp"
-        android:background="@drawable/resource_void"
+        android:layout_width="262dp"
+        android:layout_height="55dp"
+        android:background="@drawable/boton_ingresar"
         android:gravity="center"
-        android:onClick="registrarUsuario"
         android:text="@string/btn_registrarse_sesion"
-        android:textColor="@color/fondo_letras_login"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenaConfirmacion"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.146" />
 
     <EditText
         android:id="@+id/correoI"
