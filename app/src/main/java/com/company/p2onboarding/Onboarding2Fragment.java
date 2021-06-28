@@ -37,7 +37,7 @@ public class Onboarding2Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //navController.navigate(R.id.action_onboarding2Fragment_to_inicioFragment);
-                Intent intent = new Intent(Onboarding2Fragment.this.getActivity().getBaseContext(),MainActivity2.class);
+                Intent intent = new Intent(Onboarding2Fragment.this.getActivity().getBaseContext(),IniciarSesionActivity.class);
                 startActivity(intent);
             }
         });

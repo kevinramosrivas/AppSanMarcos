@@ -12,6 +12,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="ColorSplash">#B1462B</color>
+    <color name="FondoRegistro">#7A2823</color>
+    <color name="fondo_letras_login">#9E6F6C</color>
 
 
 </resources>

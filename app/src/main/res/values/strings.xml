@@ -15,4 +15,8 @@
     <string name="correoText">Correo</string>
     <string name="contrasenaText">Contraseña</string>
     <string name="confirmarContrasenaText">Confirmacion de contraseña</string>
+    <string name="hint_user">Correo: ejemplo@gmail.com</string>
+    <string name="olvide_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="logocontent">logo del login</string>
+    <string name="Registrate_text">¿No tienes cuenta? Registrate</string>
 </resources>

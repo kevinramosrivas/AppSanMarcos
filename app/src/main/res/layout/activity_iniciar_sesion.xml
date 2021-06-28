@@ -3,30 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/fondo_login"
     android:layout_height="match_parent"
+    android:background="@color/FondoRegistro"
     tools:context=".IniciarSesionActivity">
 
-    <EditText
-        android:id="@+id/contrasenaI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/contrasenaText"
-        android:inputType="textPassword"
+    <ImageView
+        android:id="@+id/imageview3"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/logocontent"
+        app:layout_constraintBottom_toTopOf="@+id/correoI"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correoI" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/visita_san_marcos_logo_login" />
 
     <Button
         android:id="@+id/iniciarSesionBtn"
-        android:layout_width="178dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="96dp"
-        android:background="@drawable/ovalado"
+        android:layout_width="262dp"
+        android:layout_height="55dp"
+        android:background="@drawable/boton_ingresar"
         android:gravity="center"
         android:text="@string/btn_iniciar_sesion"
         android:textColor="@color/white"
@@ -35,34 +31,111 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenaI"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.198" />
 
     <EditText
         android:id="@+id/correoI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/boton_ver5"
         android:ems="10"
-        android:gravity="center"
-        android:hint="@string/correoText"
+        android:gravity="center|start"
+        android:hint="@string/hint_user"
         android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/contrasenaI"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/boton_ver5"
+        android:ems="10"
+        android:gravity="center|start"
+        android:hint="@string/contrasenaText"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoI" />
+
     <Button
         android:id="@+id/btnSendToResestPassword"
-        android:layout_width="182dp"
-        android:layout_height="53dp"
-        android:background="@drawable/ovalado"
-        android:text="@string/btn_olvide_mi_contraseña"
-        android:textColor="@color/white"
+        android:layout_width="195dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/resource_void"
+        android:text="@string/olvide_contraseña"
+        android:textColor="@color/fondo_letras_login"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.741" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendToResestPassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/linea_login" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendToResestPassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/linea_login" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:text="o"
+        android:textColor="@color/fondo_letras_login"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendToResestPassword" />
+
+    <Button
+        android:id="@+id/sendtoregister"
+        android:layout_width="205dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/resource_void"
+        android:text="@string/Registrate_text"
+        android:textColor="@color/fondo_letras_login"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

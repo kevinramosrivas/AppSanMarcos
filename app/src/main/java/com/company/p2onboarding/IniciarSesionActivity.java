@@ -23,6 +23,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private Button mButtonLogin;
     private Button mButtonResetPassword;
+    private Button mbuttonsendtoregister;
     private String correoString;
     private String contrasenaString;
     @Override
@@ -34,7 +35,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mButtonLogin = (Button) findViewById(R.id.iniciarSesionBtn);
         mButtonResetPassword = (Button) findViewById(R.id.btnSendToResestPassword);
-
+        mbuttonsendtoregister= (Button) findViewById(R.id.sendtoregister);
         mButtonLogin.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -55,7 +56,12 @@ public class IniciarSesionActivity extends AppCompatActivity {
                 startActivity(new Intent(IniciarSesionActivity.this,ResetPasswordActivity.class));
             }
         });
-
+        mbuttonsendtoregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(IniciarSesionActivity.this,RegistrarseActivity.class));
+            }
+        });
     }
     private void loginUser(){
         mAuth.signInWithEmailAndPassword(correoString,contrasenaString).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
