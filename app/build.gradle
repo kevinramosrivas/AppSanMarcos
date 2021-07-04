@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.company.p2onboarding"
@@ -46,6 +46,9 @@ dependencies {
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+
 
 }
 repositories {

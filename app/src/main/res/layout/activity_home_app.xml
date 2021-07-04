@@ -1,233 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InicioFragment"
-    android:background="@drawable/fondodef2">
+    android:background="#FFFFFF"
+    tools:context=".InicioFragment">
 
-    <ImageView
-        android:id="@+id/avatarImage"
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="149dp"
-        android:src="@drawable/logodef" />
+        android:layout_height="201dp"
+        android:background="@drawable/mini_ventana"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textNickname"
-        android:layout_width="match_parent"
-        android:layout_height="580dp"
-        android:layout_marginTop="160dp"
-        android:text="Visita San Marcos"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_column="5"
-        app:layout_row="0" />
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cerebrito"></ImageView>
 
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:hint="       VisitaSanMarcos"
+            android:textSize="35sp"></TextView>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
 
     <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/idGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/avatarImage"
-        android:layout_marginTop="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="0dp"
         android:padding="4dp"
         app:columnCount="2"
         app:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardGeneral"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:foreground="?selectableItemBackground"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="left"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1">
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/generaldef"></ImageView>
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/genreal"></ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Ing.General"
-                    android:textAlignment="center"
-                    android:textColor="#4EFDB7"
-                    android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:text="General"
+                    android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- TODO: Update blank fragment layout -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardQr"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
+            android:id="@+id/cardQR"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:foreground="?selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="left"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1">
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/qcodedef"></ImageView>
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/qr"></ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Codigo QR"
-                    android:textAlignment="center"
-                    android:textColor="#292424"
-                    android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:text="QR"
+                    android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardForo"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:foreground="?selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="left"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1">
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/forodef"></ImageView>
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/foro2"></ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Foro"
-                    android:textAlignment="center"
-                    android:textColor="#AF5C14"
-                    android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardEnvio"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
+            android:id="@+id/cardConntactanos"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:foreground="?selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="left"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1">
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/correodef"></ImageView>
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/contactanos"></ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Contactanos"
-                    android:textAlignment="center"
-                    android:textColor="#E41837"
-                    android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAbout"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
+            android:id="@+id/cardQuienesSomos"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:foreground="?selectableItemBackground"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="left"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1">
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/aboutusdef"></ImageView>
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/queinessomos"></ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Sobre nosotros"
-                    android:textAlignment="center"
-                    android:textColor="#5B6762"
-                    android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:text="Quienes Somos"
+                    android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
     </androidx.gridlayout.widget.GridLayout>
+
 
     <Button
         android:id="@+id/btnSignOut"
@@ -244,7 +220,6 @@
         android:id="@+id/scanButton"
         android:layout_width="105dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/avatarImage"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="98dp"

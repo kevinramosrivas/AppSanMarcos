@@ -25,15 +25,15 @@
         tools:layout="@layout/fragment_onboarding2" >
         <action
             android:id="@+id/action_onboarding2Fragment_to_inicioFragment"
-            app:destination="@id/inicioFragment"
+            app:destination="@id/menuFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
-        android:id="@+id/inicioFragment"
-        android:name="com.company.p2onboarding.InicioFragment"
-        android:label="fragment_iniciofragment"
-        tools:layout="@layout/fragment_inicio" />
+        android:id="@+id/menuFragment"
+        android:name="com.company.p2onboarding.menu_principal"
+        android:label="fragment_menufragment"
+        tools:layout="@layout/fragment_menu_principal" />
 </navigation>
