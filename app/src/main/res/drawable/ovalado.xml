@@ -14,7 +14,7 @@
 
     <stroke
         android:width="10px"
-        android:color="@color/black"
+        android:color="@color/white"
         ></stroke>
 
 </shape>

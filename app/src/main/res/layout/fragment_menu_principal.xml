@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_principal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:background="@drawable/mini_ventana"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cerebrito"></ImageView>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="        VisitaSanMarcos"
+            android:textSize="35sp"></TextView>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:padding="4dp"
+        app:columnCount="2"
+        app:rowCount="3">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGeneral"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:foregroundGravity="left"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/genreal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardQR"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:foregroundGravity="left"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/qr"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardForo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:foregroundGravity="left"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/foro2"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foro"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardConntactanos"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:foregroundGravity="left"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/contactanos"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contactanos"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardQuienesSomos"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:foregroundGravity="left"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/queinessomos"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quienes Somos"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</RelativeLayout>
