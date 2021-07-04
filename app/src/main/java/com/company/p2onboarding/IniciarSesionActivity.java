@@ -3,6 +3,7 @@ package com.company.p2onboarding;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,6 +27,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
     private Button mbuttonsendtoregister;
     private String correoString;
     private String contrasenaString;
+    private ProgressDialog mDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
         mButtonLogin = (Button) findViewById(R.id.iniciarSesionBtn);
         mButtonResetPassword = (Button) findViewById(R.id.btnSendToResestPassword);
         mbuttonsendtoregister= (Button) findViewById(R.id.sendtoregister);
+        mDialog = new ProgressDialog(this);
         mButtonLogin.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -68,6 +71,9 @@ public class IniciarSesionActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    mDialog.setMessage("Espere un momento por favor");
+                    mDialog.setCanceledOnTouchOutside(false);
+                    mDialog.show();
                     startActivity(new Intent(IniciarSesionActivity.this,HomeAppActivity.class));
                     finish();
                 }

@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.company.p2onboarding">
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResetPasswordActivity"></activity>
-        <activity android:name=".HomeAppActivity" />
+        <activity android:name=".estadioUnmsm"></activity>
+        <activity android:name=".bibliotecaUnmsm" />
+        <activity android:name=".fisiUnmsm" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".HomeAppActivity"/>
         <activity android:name=".RegistrarseActivity" />
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".SplashActivity">

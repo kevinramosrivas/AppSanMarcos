@@ -19,4 +19,5 @@
     <string name="olvide_contraseña">¿Olvidaste tu contraseña?</string>
     <string name="logocontent">logo del login</string>
     <string name="Registrate_text">¿No tienes cuenta? Registrate</string>
+    <string name="CerrarSesion_text">Cerrar Sesión</string>
 </resources>

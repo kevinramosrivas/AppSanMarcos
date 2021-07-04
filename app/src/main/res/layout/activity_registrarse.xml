@@ -29,6 +29,7 @@
         android:layout_height="55dp"
         android:background="@drawable/boton_ingresar"
         android:gravity="center"
+        android:onClick="registrarUsuario"
         android:text="@string/btn_registrarse_sesion"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

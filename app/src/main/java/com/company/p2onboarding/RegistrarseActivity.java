@@ -3,6 +3,7 @@ package com.company.p2onboarding;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,7 @@ public class RegistrarseActivity extends AppCompatActivity {
     private EditText contrasena;
     private EditText contrasenaConfirmacion;
     DatabaseReference mDatabase;
+    private ProgressDialog mDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,7 @@ public class RegistrarseActivity extends AppCompatActivity {
         correo = findViewById(R.id.correoI);
         contrasena = findViewById(R.id.contrasenaI);
         contrasenaConfirmacion = findViewById(R.id.contrasenaConfirmacion);
+        mDialog = new ProgressDialog(this);
     }
     @Override
     public void onStart() {
@@ -60,6 +63,9 @@ public class RegistrarseActivity extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task2) {
                                         if(task2.isSuccessful()){
+                                            mDialog.setMessage("Espere un momento por favor");
+                                            mDialog.setCanceledOnTouchOutside(false);
+                                            mDialog.show();
                                             Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
                                             Intent i = new Intent(getApplicationContext(),IniciarSesionActivity.class);
                                             startActivity(i);
@@ -74,7 +80,7 @@ public class RegistrarseActivity extends AppCompatActivity {
                             } else {
                                 // If sign in fails, display a message to the user.
                                 //Log.w(TAG, "signInWithCustomToken:failure", task.getException());
-                                Toast.makeText(getApplicationContext(),"Authentication failed.",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"Autentificacion fallida.",Toast.LENGTH_SHORT).show();
                                 //updateUI(null);
                             }
                         }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -16,7 +17,7 @@ import com.google.zxing.integration.android.IntentResult;
 public class HomeAppActivity extends AppCompatActivity {
     private Button mButtonSingOut;
     private FirebaseAuth mAuth;
-    private Button btnScan;
+    private ImageButton btnScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class HomeAppActivity extends AppCompatActivity {
 
         mAuth  = FirebaseAuth.getInstance();
         mButtonSingOut = (Button) findViewById(R.id.btnSignOut);
-        btnScan = (Button)findViewById(R.id.scanButton);
+        btnScan = (ImageButton)findViewById(R.id.qrScanImageButton);
 
         mButtonSingOut.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -45,6 +46,7 @@ public class HomeAppActivity extends AppCompatActivity {
                 integrador.setCameraId(0);
                 integrador.setBeepEnabled(true);
                 integrador.setBarcodeImageEnabled(true);
+                integrador.setOrientationLocked(false);
                 integrador.initiateScan();
             }
         });
@@ -59,6 +61,21 @@ public class HomeAppActivity extends AppCompatActivity {
             }
             else{
                 Toast.makeText(this,result.getContents(),Toast.LENGTH_LONG).show();
+                String idPoint = result.getContents();
+                switch (idPoint){
+                    case "fisiUnmsm":
+                        Intent intent1 = new Intent(HomeAppActivity.this,fisiUnmsm.class);
+                        startActivity(intent1);
+                        break;
+                    case "bibliotecaUnmsm":
+                        Intent intent2 = new Intent(HomeAppActivity.this,bibliotecaUnmsm.class);
+                        startActivity(intent2);
+                        break;
+                    case "estadioUnmsm":
+                        Intent intent3 = new Intent(HomeAppActivity.this,estadioUnmsm.class);
+                        startActivity(intent3);
+                        break;
+                }
 
             }
         }

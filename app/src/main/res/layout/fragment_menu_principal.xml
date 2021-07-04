@@ -52,10 +52,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/generalImageButton"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/genreal"/>
+                    android:background="@drawable/genreal" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -84,10 +85,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/qrScanImageButton"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/qr"/>
+                    android:background="@drawable/qr" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -117,10 +119,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/foroImageButton"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/foro2"/>
+                    android:background="@drawable/foro2" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -150,10 +153,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/contactanosImageButton"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/contactanos"/>
+                    android:background="@drawable/contactanos" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -184,10 +188,11 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/quienesSomosImageButton"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/queinessomos"/>
+                    android:background="@drawable/queinessomos" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -201,5 +206,7 @@
 
 
 
+
     </androidx.gridlayout.widget.GridLayout>
+
 </RelativeLayout>
