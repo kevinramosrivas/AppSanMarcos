@@ -10,7 +10,7 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="201dp"
+        android:layout_height="158dp"
         android:background="@drawable/mini_ventana"
         android:orientation="vertical">
 
@@ -58,11 +58,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/genreal"></ImageView>
+                    android:background="@drawable/genreal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,11 +90,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/qr"></ImageView>
+                    android:background="@drawable/qr"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -122,11 +122,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/foro2"></ImageView>
+                    android:background="@drawable/foro2"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -154,11 +154,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/contactanos"></ImageView>
+                    android:background="@drawable/contactanos"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -186,11 +186,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/queinessomos"></ImageView>
+                    android:background="@drawable/queinessomos"/>
 
                 <TextView
                     android:layout_width="wrap_content"
