@@ -7,12 +7,27 @@
     tools:context=".fisiUnmsm">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tituloFisi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ESTA ES LA PGINA DE LA FISI "
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/TituloFISI"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="331dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloFisi"
+        app:srcCompat="@drawable/fisi_unmsm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,4 +20,35 @@
     <string name="logocontent">logo del login</string>
     <string name="Registrate_text">¿No tienes cuenta? Registrate</string>
     <string name="CerrarSesion_text">Cerrar Sesión</string>
+    <string name="TituloFISI">Facultad de Ingenieria de Sistemas e Informatica</string>
+    <string name="TituloEstadio">Estadio Unmsm</string>
+    <string name="cuerpoEstadio"><br>Estadio San Marcos</br><br>*Fecha de fundación: 13 de Mayo de 1951(Conmemorando los 400 años de fundación de la UNMSM).</br>
+<br>*Ubicación: Jr. Amézaga s/n con la Av. Venezuela s/n, en la ciudad de Lima, Perú.</br>
+<br>*Dimensiones: 105 x 70 m.</br>
+<br>*Capacidad: 32000 espectadores.</br>
+<br>*Es el primer estadio de gran capacidad en el Perú,en el año de su</br><br>fundación fue escenario de los juegos Olímpicos Especiales.</br>
+<br>En 1955 fue sede de los V Juegos Deportivos Universitarios Nacionales.</br>
+<br>Fue sede de localía del equipo de fútbol de San Marcos, que estuvo en 2da División.</br>
+<br>El estadio fue sede anfitrión de diversos eventos deportivos.</br>
+	<br>-Juegos deportivos universitarios nacionales (edición especial, 1951).</br>
+	<br>-Juegos deportivos universitarios nacionales (V edición, 1955).</br>
+	<br>-Juegos deportivos universitarios nacionales (VII edición, 1983).</br>
+	<br>-Campeonato Sudamericano de Fútbol Sub-17 de 2019.</br>
+	<br>-Juegos Panamericanos de 2019.</br></string>
+
+    <string name="TituloBiblio">Bilioteca Pedro Zulen</string>
+    <string name="cuerpoBiblio">Biblioteca Central Pedro Zulen<br></br>
+*Fecha de fundación: Diciembre de 1999<br></br>
+*Ubicación: Plaza Cívica del campus universitario de la UNMSM<br></br>
+*Superficie: 19.800 m^2<br></br>
+*Capacidad: 2500 personas<br></br>
+*Es la biblioteca universitaria más grande del Perú y una de las<br></br>más grandes de América Latina, está constituida de cuatro
+edificios unidos entre sí, tiene 5 niveles, cuenta con un escenario multifuncional,<br></br> conexión a Internet, sistemas de
+videoconferencia, proyectores multimedia, radio enlaces y equipos de audio y sonido profesional.<br></br>
+La biblioteca tiene como visión convertirse en un centro de información y modelo de biblioteca universitaria que brinde<br></br>
+servicios de información innovadores a los usuarios internos y externos.<br></br>
+Para ello, tiene como misión el ser un centro de recursos de información y difusión del conocimiento científico, tecnológico<br></br>
+y humanístico que contribuya en la formación académico profesional y la investigación</string>
+
+
 </resources>
