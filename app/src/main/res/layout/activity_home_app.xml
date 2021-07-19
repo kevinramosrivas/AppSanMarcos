@@ -33,13 +33,13 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="408dp"
-        android:layout_height="495dp"
+        android:layout_width="wrap_content"
+        android:layout_height="501dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="0dp"
         android:padding="4dp"
@@ -64,7 +64,7 @@
 
                 <ImageButton
                     android:id="@+id/generalImageButton"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/genreal" />
@@ -97,7 +97,7 @@
 
                 <ImageButton
                     android:id="@+id/qrScanImageButton"
-                    android:layout_width="120dp"
+                    android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/qr" />
@@ -130,7 +130,7 @@
 
                 <ImageButton
                     android:id="@+id/foroImageButton"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/foro2" />
@@ -163,7 +163,7 @@
 
                 <ImageButton
                     android:id="@+id/contactanosImageButton"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/contactanos" />
@@ -196,7 +196,7 @@
 
                 <ImageButton
                     android:id="@+id/quienesSomosImageButton"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/queinessomos" />
