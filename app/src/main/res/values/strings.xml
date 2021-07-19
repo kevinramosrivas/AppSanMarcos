@@ -19,7 +19,7 @@
     <string name="olvide_contraseña">¿Olvidaste tu contraseña?</string>
     <string name="logocontent">logo del login</string>
     <string name="Registrate_text">¿No tienes cuenta? Registrate</string>
-    <string name="CerrarSesion_text">Cerrar Sesión</string>
+    <string name="CerrarSesion_text">Salir</string>
     <string name="TituloFISI">Facultad de Ingenieria de Sistemas e Informatica</string>
     <string name="TituloEstadio">Estadio Unmsm</string>
     <string name="cuerpoEstadio"><br>Estadio San Marcos</br><br>*Fecha de fundación: 13 de Mayo de 1951(Conmemorando los 400 años de fundación de la UNMSM).</br>
