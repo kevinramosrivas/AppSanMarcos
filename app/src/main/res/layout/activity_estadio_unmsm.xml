@@ -8,13 +8,6 @@
     tools:context=".estadioUnmsm" >
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="49dp" />
-
-    <TextView
         android:id="@+id/titulo_estadio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,25 +24,26 @@
         android:id="@+id/cuerpo_estadio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:text="@string/cuerpoEstadio"
         android:textAlignment="viewStart"
         android:textColor="#050505"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="353dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_estadio"
-        app:srcCompat="@drawable/estadio_unmsm" />
+        app:layout_constraintVertical_bias="1.0">
 
+    </ViewFlipper>
 </androidx.constraintlayout.widget.ConstraintLayout>

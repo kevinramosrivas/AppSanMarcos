@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class HomeAppActivity extends AppCompatActivity {
     private Button mButtonSingOut;
     private FirebaseAuth mAuth;
     private ImageButton btnScan;
+    private ImageButton btnContacto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class HomeAppActivity extends AppCompatActivity {
         mAuth  = FirebaseAuth.getInstance();
         mButtonSingOut = (Button) findViewById(R.id.btnSignOut);
         btnScan = (ImageButton)findViewById(R.id.qrScanImageButton);
-
+        btnContacto = (ImageButton)findViewById(R.id.contactanosImageButton) ;
         mButtonSingOut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -48,6 +50,14 @@ public class HomeAppActivity extends AppCompatActivity {
                 integrador.setBarcodeImageEnabled(true);
                 integrador.setOrientationLocked(false);
                 integrador.initiateScan();
+            }
+        });
+        btnContacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfElwsC-Bo4fYDEfEWDO3BzrYrQAHqrxIJQ3luJnWh_vueY2g/viewform?usp=sf_link");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
     }
