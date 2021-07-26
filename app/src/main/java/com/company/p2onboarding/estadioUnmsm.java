@@ -4,15 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
+
+import java.util.Locale;
 
 public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener {
     ViewFlipper v_flipper;
     private TextToSpeech tts;
-    private Button btnEstadio;
+    private TextView textViewEstadio;
+    private ImageButton btnEstadioPlay;
+    private ImageButton btnEstadioStop;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,15 +31,23 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
             flipperImages(image);
         }
         tts = new TextToSpeech(this,this);
-        btnEstadio = (Button) findViewById(R.id.estadioAVoz);
-
-        btnEstadio.setOnClickListener(new View.OnClickListener() {
+        btnEstadioPlay = (ImageButton) findViewById(R.id.estadioAVozPlay);
+        btnEstadioStop = (ImageButton) findViewById(R.id.estadioAVozPause);
+        textViewEstadio = (TextView) findViewById(R.id.cuerpo_estadio);
+        btnEstadioPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 speakOut();
             }
 
         });
+        btnEstadioStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tts.stop();
+            }
+        });
+
     }
     public void flipperImages(int image){
         ImageView imageView = new ImageView(this);
@@ -48,8 +62,23 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
 
     @Override
     public void onInit(int status) {
+        if(status == TextToSpeech.SUCCESS){
+            int result = tts.setLanguage(Locale.getDefault());
+            if(result==TextToSpeech.LANG_NOT_SUPPORTED
+                    || result ==TextToSpeech.LANG_MISSING_DATA){
+                Log.e("TTS","Este lenguaje no es soportado");
+            }
+            else{
+                speakOut();
+            }
+        }
+        else{
+            Log.e("TTS","inicializacion del lenguaje falla");
+        }
 
     }
     private void speakOut() {
+        String textoEstadio = textViewEstadio.getText().toString();
+        tts.speak(textoEstadio,TextToSpeech.QUEUE_FLUSH,null);
     }
 }

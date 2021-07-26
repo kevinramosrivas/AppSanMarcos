@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF8F8"
-    tools:context=".estadioUnmsm" >
+    tools:context=".estadioUnmsm">
 
     <TextView
         android:id="@+id/titulo_estadio"
@@ -48,15 +48,27 @@
 
     </ViewFlipper>
 
-    <Button
-        android:id="@+id/estadioAVoz"
-        android:layout_width="131dp"
-        android:layout_height="55dp"
+    <ImageButton
+        android:id="@+id/estadioAVozPlay"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="120dp"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/cuerpo_estadio"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.777" />
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/estadioAVozPause"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/cuerpo_estadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/estadioAVozPlay"
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
+        app:srcCompat="@android:drawable/ic_media_pause" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

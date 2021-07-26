@@ -85,6 +85,18 @@ public class HomeAppActivity extends AppCompatActivity {
                         Intent intent3 = new Intent(HomeAppActivity.this,estadioUnmsm.class);
                         startActivity(intent3);
                         break;
+                    case "huacaUnmsm":
+                        Intent intent4 = new Intent(HomeAppActivity.this,huacaUnmsm.class);
+                        startActivity(intent4);
+                        break;
+                    case "clinicaUnmsm":
+                        Intent intent5 = new Intent(HomeAppActivity.this,clinicaUniversitariaUnmsm.class);
+                        startActivity(intent5);
+                        break;
+                    case "plazaFrayUnmsm":
+                        Intent intent6 = new Intent(HomeAppActivity.this,plazaFrayTomasUnmsm.class);
+                        startActivity(intent6);
+                        break;
                 }
 
             }
