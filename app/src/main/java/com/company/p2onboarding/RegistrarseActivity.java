@@ -53,34 +53,38 @@ public class RegistrarseActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                Map<String,Object> map = new HashMap<>();
-                                map.put("correo",correo.getText().toString().trim());
-                                map.put("contrasena",contrasena.getText().toString());
+                                //Map<String,Object> map = new HashMap<>();
+                                //map.put("correo",correo.getText().toString().trim());
+                                //map.put("contrasena",contrasena.getText().toString());
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "signInWithCustomToken:success");
-                                String id = mAuth.getCurrentUser().getUid();
-                                mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task2) {
-                                        if(task2.isSuccessful()){
-                                            mDialog.setMessage("Espere un momento por favor");
-                                            mDialog.setCanceledOnTouchOutside(false);
-                                            mDialog.show();
-                                            Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
-                                            Intent i = new Intent(getApplicationContext(),IniciarSesionActivity.class);
-                                            startActivity(i);
-                                        }
-                                        else{
-                                            Toast.makeText(RegistrarseActivity.this,"no se crearon los datos correctamente",Toast.LENGTH_LONG).show();
-                                        }
-                                    }
-                                });
-                                //FirebaseUser user = mAuth.getCurrentUser();
-                                //updateUI(user);
-                            } else {
+                                //String id = mAuth.getCurrentUser().getUid();
+                                //mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(task2 -> {
+                                mDialog.setMessage("Espere un momento por favor");
+                                mDialog.setCanceledOnTouchOutside(false);
+                                mDialog.show();
+                                Toast.makeText(getApplicationContext(), "Usuario creado", Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(getApplicationContext(), IniciarSesionActivity.class);
+                                startActivity(i);
+                                //if(task2.isSuccessful()){
+                                //  mDialog.setMessage("Espere un momento por favor");
+                                //mDialog.setCanceledOnTouchOutside(false);
+                                //  mDialog.show();
+                                //  Toast.makeText(getApplicationContext(),"Usuario creado",Toast.LENGTH_LONG).show();
+                                //  Intent i = new Intent(getApplicationContext(),IniciarSesionActivity.class);
+                                //  startActivity(i);
+                                // }
+                                // else{
+                                //     Toast.makeText(RegistrarseActivity.this,"no se crearon los datos correctamente",Toast.LENGTH_LONG).show();
+                            }
+                            //});
+                            //FirebaseUser user = mAuth.getCurrentUser();
+                            //updateUI(user);
+                            //}
+                            else {
                                 // If sign in fails, display a message to the user.
                                 //Log.w(TAG, "signInWithCustomToken:failure", task.getException());
-                                Toast.makeText(getApplicationContext(),"Autentificacion fallida.",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Autentificacion fallida.", Toast.LENGTH_SHORT).show();
                                 //updateUI(null);
                             }
                         }
