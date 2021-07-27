@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".clinicaUniversitariaUnmsm">
 
+    <TextView
+        android:id="@+id/tituloClinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TituloClinica"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewFlipper
+        android:id="@+id/flipper_clinica"
+        android:layout_width="371dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloClinica">
+
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/cuerpoClinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CuerpoClinica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
+        app:layout_constraintVertical_bias="0.44" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

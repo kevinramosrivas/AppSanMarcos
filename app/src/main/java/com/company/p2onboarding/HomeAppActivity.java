@@ -20,6 +20,7 @@ public class HomeAppActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private ImageButton btnScan;
     private ImageButton btnContacto;
+    private ImageButton btnAcercaDe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class HomeAppActivity extends AppCompatActivity {
                 finish();
             }
         });
+
 
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +86,18 @@ public class HomeAppActivity extends AppCompatActivity {
                     case "estadioUnmsm":
                         Intent intent3 = new Intent(HomeAppActivity.this,estadioUnmsm.class);
                         startActivity(intent3);
+                        break;
+                    case "clinicaUnmsm":
+                        Intent intent4 = new Intent(HomeAppActivity.this,clinicaUniversitariaUnmsm.class);
+                        startActivity(intent4);
+                        break;
+                    case "huacaUnmsm":
+                        Intent intent5 = new Intent(HomeAppActivity.this,huacaUnmsm.class);
+                        startActivity(intent5);
+                        break;
+                    case "plazaUnmsm":
+                        Intent intent6 = new Intent(HomeAppActivity.this,plazaFrayTomasUnmsm.class);
+                        startActivity(intent6);
                         break;
                 }
 

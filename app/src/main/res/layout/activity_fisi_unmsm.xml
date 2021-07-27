@@ -26,6 +26,7 @@
         android:layout_width="353dp"
         android:layout_height="176dp"
         android:layout_marginTop="40dp"
+        android:transitionGroup="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,5 +34,18 @@
         app:layout_constraintVertical_bias="0.0">
 
     </ViewFlipper>
+
+    <TextView
+        android:id="@+id/cuerpoFisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/CuerpoFisi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
+        app:layout_constraintVertical_bias="0.046" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

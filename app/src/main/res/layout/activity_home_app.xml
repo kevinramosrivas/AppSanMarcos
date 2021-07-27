@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="QR"
+                    android:text="Escaner QR"
                     android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Contactanos"
+                    android:text="Contáctanos"
                     android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -205,7 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Quienes Somos"
+                    android:text="Quiénes Somos"
                     android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

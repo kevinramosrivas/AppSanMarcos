@@ -22,33 +22,34 @@
     <string name="CerrarSesion_text">Salir</string>
     <string name="TituloFISI">Facultad de Ingenieria de Sistemas e Informatica</string>
     <string name="TituloEstadio">Estadio Unmsm</string>
-    <string name="cuerpoEstadio"><br>Estadio San Marcos</br><br>*Fecha de fundación: 13 de Mayo de 1951(Conmemorando los 400 años de fundación de la UNMSM).</br>
-<br>*Ubicación: Jr. Amézaga s/n con la Av. Venezuela s/n, en la ciudad de Lima, Perú.</br>
-<br>*Dimensiones: 105 x 70 m.</br>
-<br>*Capacidad: 32000 espectadores.</br>
-<br>*Es el primer estadio de gran capacidad en el Perú,en el año de su</br><br>fundación fue escenario de los juegos Olímpicos Especiales.</br>
-<br>En 1955 fue sede de los V Juegos Deportivos Universitarios Nacionales.</br>
-<br>Fue sede de localía del equipo de fútbol de San Marcos, que estuvo en 2da División.</br>
-<br>El estadio fue sede anfitrión de diversos eventos deportivos.</br>
-	<br>-Juegos deportivos universitarios nacionales (edición especial, 1951).</br>
-	<br>-Juegos deportivos universitarios nacionales (V edición, 1955).</br>
-	<br>-Juegos deportivos universitarios nacionales (VII edición, 1983).</br>
-	<br>-Campeonato Sudamericano de Fútbol Sub-17 de 2019.</br>
-	<br>-Juegos Panamericanos de 2019.</br></string>
-
+    <string name="cuerpoEstadio">" *Fecha de fundación: 13 de Mayo de 1951(Conmemorando  los 400 años de fundación de la UNMSM). \n *  Ubicación: Jr. Amézaga s/n  con la Av. Venezuela s/n, en la ciudad de Lima, Perú. *Dimensiones: 105 x 70 m. \n *  Capacidad: 32000 espectadores. \n *  Es el primer estadio de gran capacidad en el Perú,en \n el año de su fundación fue escenario de los juegos Olímpicos Especiales.
+        \n El estadio fue sede anfitrión de diversos eventos deportivos. \n -Juegos deportivos universitarios nacionales (edición especial, 1951). \n -Juegos deportivos universitarios nacionales (V edición, 1955).    \n-Campeonato Sudamericano de Fútbol Sub-17 de 2019. \n -Juegos Panamericanos de 2019."</string>
     <string name="TituloBiblio">Bilioteca Pedro Zulen</string>
-    <string name="cuerpoBiblio">Biblioteca Central Pedro Zulen<br></br>
-*Fecha de fundación: Diciembre de 1999<br></br>
-*Ubicación: Plaza Cívica del campus universitario de la UNMSM<br></br>
-*Superficie: 19.800 m^2<br></br>
-*Capacidad: 2500 personas<br></br>
-*Es la biblioteca universitaria más grande del Perú y una de las<br></br>más grandes de América Latina, está constituida de cuatro
-edificios unidos entre sí, tiene 5 niveles, cuenta con un escenario multifuncional,<br></br> conexión a Internet, sistemas de
-videoconferencia, proyectores multimedia, radio enlaces y equipos de audio y sonido profesional.<br></br>
-La biblioteca tiene como visión convertirse en un centro de información y modelo de biblioteca universitaria que brinde<br></br>
-servicios de información innovadores a los usuarios internos y externos.<br></br>
-Para ello, tiene como misión el ser un centro de recursos de información y difusión del conocimiento científico, tecnológico<br></br>
-y humanístico que contribuya en la formación académico profesional y la investigación</string>
+    <string name="cuerpoBiblio">"  *Fecha de fundación: Diciembre de 1999 \n   *Ubicación: Plaza Cívica del campus universitario de la UNMSM \n   *Superficie: 19.800 m^2
+    \n   *Capacidad: 2500 personas \n   Es la biblioteca universitaria más grande del Perú y una de las más grandes de América Latina, está constituida de cuatro
+    edificios unidos entre sí, tiene 5 niveles, cuenta con un escenario multifuncional, conexión a Internet, sistemas de videoconferencia, proyectores multimedia, radio enlaces y equipos de audio y sonido profesional. \n\n   La biblioteca tiene como visión convertirse en un centro de información y modelo de biblioteca universitaria que brinde
+    servicios de información innovadores a los usuarios internos y externos.Para ello, tiene como misión el ser un centro de recursos de información y difusión del conocimiento científico, tecnológico y humanístico que contribuya en la formación académico profesional y la investigación"</string>
+
+    <string name="CuerpoFisi">"   Fundación: 1996 como escuela / 2000 como facultad \n     Ubicación: Ciudad universitaria de la Universidad de San Marcos
+    \n Misión: Generar y difundir conocimiento científico, tecnológico y humanístico, formando profesionales e investigadores lideres, con valores y respetuosos de la diversidad
+	cultural.
+    \n Visión: Ser una facultad referente de excelencia y calidad en la formación profesional e investigación en las ingenierías de Sistemas, de software y de ciencia de la
+	computación, reconocida nacional e internacionalmente."</string>
+
+    <string name="TituloClinica">Clinica Universitaria</string>
+    <string name="CuerpoClinica">"     En 1941 se crea en San Marcos los Servicios Médicos, en el 2do piso de la Facultad de Ciencias en el Parque Universitario. En 1982 se inaugura el nuevo local en el corazón de la Ciudad Universitaria, con el nombre de Centro Universitario de Salud y Trabajo Social. En 1998 se convierte en Clínica Universitaria - Servicios Médicos, la cual a su vez amplía la cobertura externa al púbico en general.
+En sus primeros años fue implementada con un valioso equipo e instrumental médico de última generación, que -según indicó el Rector sanmarquino de ese tiempo, el doctor Manuel Paredes Manrique- permitirá realizar exámenes de apoyo diagnóstico tanto de laboratorio como radiológicos, ecográficos, entre otros servicios que corresponden a una clínica moderna y con doce horas de atención diaria. \n Algunos consultorios actuales son:
+       Medicina General,Dermatologia,Ginecologia,Traumatologia,Odontologia,entre otros."</string>
+
+    <string name="TituloHuaca">Huaca San Marcos</string>
+    <string name="CuerpoHuaca">"     *Captada: Thomas Joseph Hutchinson en 1873 \n    *Dimensiones: 62,732.83m^2(332m de largo, 137m de ancho en el extremo norte y 32m de alto en el extremo sur)
+    \n    *Cultura: Lima, posteriormente bajo la cultura Ichma se convirtió en cementerio \n    *Uso original: Ceremonial \n  *Uso actual: objeto de estudios para arqueólogos, en donde se han encontrado diversos ceramios, fardos funerarios, tejidos, ofrendas y quipus.
+    \n     *Declarado "Patrimonio cultural de la Nación" por el Instituto Nacional de Cultura."</string>
+    <string name="TituloAcercaDe">Sobre nosotros...</string>
+    <string name="CuerpoNosotros">"Somos un grupo de estudiantes San marquinos de la Facultad de Sistemas e Informatica cursando el quinto ciclo. \n
+    Nuestro objetivo es dar a conocer la cultura de nuestra universidad aplicando los conocimientos obtenidos a traves de nuestros estudios.\n Esta aplicacion
+        es la muestra de nuestro respeto y admiracion por la universidad y esperamos que sea todo un suceso en su version final"</string>
+    <string name="title_activity_quienes_somos">asdasd</string>
 
 
 </resources>
