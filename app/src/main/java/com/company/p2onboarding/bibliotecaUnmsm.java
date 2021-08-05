@@ -2,14 +2,19 @@ package com.company.p2onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Locale;
 
 public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener{
@@ -18,6 +23,7 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
     private TextView textViewBiblioteca;
     private ImageButton btnBibliotecaPlay;
     private ImageButton btnBibliotecaStop;
+    private FloatingActionButton btnRetroceder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +39,12 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         btnBibliotecaPlay = (ImageButton) findViewById(R.id.bibliotecaAVozPlay);
         btnBibliotecaStop = (ImageButton) findViewById(R.id.bibliotecaAVozStop);
         textViewBiblioteca = (TextView) findViewById(R.id.textViewBiblioteca);
+        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederBiblioteca);
         btnBibliotecaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 speakOut();
+                Toast.makeText(bibliotecaUnmsm.this, "Espere un momento por favor", Toast.LENGTH_LONG).show();
             }
 
 
@@ -45,6 +52,15 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         btnBibliotecaStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tts.stop();
+            }
+        });
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(bibliotecaUnmsm.this,HomeAppActivity.class);
+                startActivity(intent);
+                finish();
                 tts.stop();
             }
         });
@@ -68,9 +84,6 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
             if(result==TextToSpeech.LANG_NOT_SUPPORTED
                     || result ==TextToSpeech.LANG_MISSING_DATA){
                 Log.e("TTS","Este lenguaje no es soportado");
-            }
-            else{
-                speakOut();
             }
         }
         else{

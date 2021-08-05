@@ -2,6 +2,7 @@ package com.company.p2onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -9,7 +10,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Locale;
 
@@ -20,6 +24,7 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
     private TextView textViewClinica;
     private ImageButton btnClinicaPlay;
     private ImageButton btnClinicaStop;
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +43,26 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
         btnClinicaPlay = (ImageButton) findViewById(R.id.clinicaVozPlay);
         btnClinicaStop = (ImageButton) findViewById(R.id.ClinicaAVozStop);
         textViewClinica = (TextView) findViewById(R.id.cuerpoClinica);
+        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederClinica);
         btnClinicaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 speakOut();
+                Toast.makeText(clinicaUniversitariaUnmsm.this, "Espere un momento por favor", Toast.LENGTH_SHORT).show();
             }
         });
         btnClinicaStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tts.stop();
+            }
+        });
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clinicaUniversitariaUnmsm.this,HomeAppActivity.class);
+                startActivity(intent);
+                finish();
                 tts.stop();
             }
         });
@@ -69,9 +85,6 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
             if(result==TextToSpeech.LANG_NOT_SUPPORTED
                     || result ==TextToSpeech.LANG_MISSING_DATA){
                 Log.e("TTS","Este lenguaje no es soportado");
-            }
-            else{
-                speakOut();
             }
         }
         else{

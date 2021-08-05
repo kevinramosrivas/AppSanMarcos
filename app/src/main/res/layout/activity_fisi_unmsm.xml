@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".fisiUnmsm">
 
-    <TextView
-        android:id="@+id/tituloFisi"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRetrocederFisi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:contentDescription="Regresar"
+        app:backgroundTint="@color/ColorSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/tituloFisi"
+        android:layout_width="231dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TituloFISI"
         android:textAlignment="center"
@@ -18,59 +32,73 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper" />
 
     <ViewFlipper
         android:id="@+id/v_flipper"
-        android:layout_width="353dp"
-        android:layout_height="176dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoFisi"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="391dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloFisi"
-        app:layout_constraintVertical_bias="0.181">
+        app:layout_constraintTop_toTopOf="parent">
 
     </ViewFlipper>
-
-    <TextView
-        android:id="@+id/cuerpoFisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:orientation="vertical"
-        android:text="@string/CuerpoFisi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.046" />
 
     <ImageButton
         android:id="@+id/FisiAVozPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoFisi"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="Iniciar la reproduccion de la  informacion"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
         app:layout_constraintEnd_toStartOf="@+id/FisiAVozStop"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toEndOf="@+id/tituloFisi"
         app:srcCompat="@android:drawable/ic_media_play" />
 
     <ImageButton
         android:id="@+id/FisiAVozStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoFisi"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Detener la reproduccion de la  informacion"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/v_flipper"
+        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloFisi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cuerpoFisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="vertical"
+                android:text="@string/CuerpoFisi"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="453dp" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

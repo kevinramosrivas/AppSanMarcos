@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import java.util.Locale;
@@ -41,8 +42,8 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
         btnHuacaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 speakOut();
+                Toast.makeText(huacaUnmsm.this, "Espere un momento por favor", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -74,9 +75,6 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
             if(result==TextToSpeech.LANG_NOT_SUPPORTED
                     || result ==TextToSpeech.LANG_MISSING_DATA){
                 Log.e("TTS","Este lenguaje no es soportado");
-            }
-            else{
-                speakOut();
             }
         }
         else{
