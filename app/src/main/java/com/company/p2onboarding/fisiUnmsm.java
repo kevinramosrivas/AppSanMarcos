@@ -2,6 +2,7 @@ package com.company.p2onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -9,7 +10,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Locale;
 
@@ -19,6 +23,7 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
     private TextView textViewFisi;
     private ImageButton btnFisiPlay;
     private ImageButton btnFisiStop;
+    private FloatingActionButton btnRetroceder;
 
 
     @Override
@@ -38,11 +43,12 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
         btnFisiPlay = (ImageButton) findViewById(R.id.FisiAVozPlay);
         btnFisiStop = (ImageButton) findViewById(R.id.FisiAVozStop);
         textViewFisi = (TextView) findViewById(R.id.cuerpoFisi);
+        btnRetroceder = (FloatingActionButton)findViewById(R.id.btnRetrocederFisi);
         btnFisiPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 speakOut();
+                Toast.makeText(fisiUnmsm.this, "Espere un momento por favor", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -50,6 +56,15 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
         btnFisiStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tts.stop();
+            }
+        });
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(fisiUnmsm.this,HomeAppActivity.class);
+                startActivity(intent);
+                finish();
                 tts.stop();
             }
         });
@@ -75,9 +90,6 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
             if(result==TextToSpeech.LANG_NOT_SUPPORTED
                     || result ==TextToSpeech.LANG_MISSING_DATA){
                 Log.e("TTS","Este lenguaje no es soportado");
-            }
-            else{
-                speakOut();
             }
         }
         else{

@@ -8,6 +8,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 import android.widget.TextView;
 
@@ -40,6 +41,7 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
             @Override
         public void onClick(View v) {
             speakOut();
+                Toast.makeText(estadioUnmsm.this, "Espere un momento por favor", Toast.LENGTH_SHORT).show();
         }
 
         });
@@ -69,9 +71,6 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
             if(result==TextToSpeech.LANG_NOT_SUPPORTED
                     || result ==TextToSpeech.LANG_MISSING_DATA){
                 Log.e("TTS","Este lenguaje no es soportado");
-            }
-            else{
-                speakOut();
             }
         }
         else{
