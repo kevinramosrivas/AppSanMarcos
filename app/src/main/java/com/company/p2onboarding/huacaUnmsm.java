@@ -3,11 +3,23 @@ package com.company.p2onboarding;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class huacaUnmsm extends AppCompatActivity {
+import java.util.Locale;
+
+public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener {
     ViewFlipper v_flipper;
+    private TextToSpeech tts;
+    private TextView textViewHuaca;
+    private ImageButton btnHuacaPlay;
+    private ImageButton btnHuacaStop;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -22,6 +34,26 @@ public class huacaUnmsm extends AppCompatActivity {
             flipperImages(image);
         }
 
+        tts = new TextToSpeech(this,this);
+        btnHuacaPlay = (ImageButton) findViewById(R.id.HuacaAVozPlay);
+        btnHuacaStop = (ImageButton) findViewById(R.id.HuacaAVozStop);
+        textViewHuaca = (TextView) findViewById(R.id.cuerpoHuaca);
+        btnHuacaPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                speakOut();
+            }
+
+
+        });
+        btnHuacaStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tts.stop();
+            }
+        });
+
     }
 
     public void flipperImages(int image){
@@ -34,5 +66,28 @@ public class huacaUnmsm extends AppCompatActivity {
         v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
 
     }
+
+    @Override
+    public void onInit(int status) {
+        if(status == TextToSpeech.SUCCESS){
+            int result = tts.setLanguage(Locale.getDefault());
+            if(result==TextToSpeech.LANG_NOT_SUPPORTED
+                    || result ==TextToSpeech.LANG_MISSING_DATA){
+                Log.e("TTS","Este lenguaje no es soportado");
+            }
+            else{
+                speakOut();
+            }
+        }
+        else{
+            Log.e("TTS","inicializacion del lenguaje falla");
+        }
+    }
+
+    private void speakOut() {
+        String textoHuaca = textViewHuaca.getText().toString();
+        tts.speak(textoHuaca,TextToSpeech.QUEUE_FLUSH,null);
+    }
+
 
 }

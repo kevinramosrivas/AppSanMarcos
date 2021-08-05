@@ -36,6 +36,7 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         btnBibliotecaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 speakOut();
             }
 

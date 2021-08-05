@@ -3,11 +3,24 @@ package com.company.p2onboarding;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class clinicaUniversitariaUnmsm extends AppCompatActivity {
+import java.util.Locale;
+
+public class clinicaUniversitariaUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener{
+
     ViewFlipper v_flipper;
+    private TextToSpeech tts;
+    private TextView textViewClinica;
+    private ImageButton btnClinicaPlay;
+    private ImageButton btnClinicaStop;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +34,22 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity {
             flipperImages(image);
         }
 
+        tts = new TextToSpeech(this,this);
+        btnClinicaPlay = (ImageButton) findViewById(R.id.clinicaVozPlay);
+        btnClinicaStop = (ImageButton) findViewById(R.id.ClinicaAVozStop);
+        textViewClinica = (TextView) findViewById(R.id.cuerpoClinica);
+        btnClinicaPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speakOut();
+            }
+        });
+        btnClinicaStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tts.stop();
+            }
+        });
     }
 
     public void flipperImages(int image){
@@ -31,7 +60,29 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity {
         v_flipper.setAutoStart(true);
         v_flipper.setInAnimation(this,android.R.anim.slide_out_right);
         v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
-
     }
+
+    @Override
+    public void onInit(int status) {
+        if(status == TextToSpeech.SUCCESS){
+            int result = tts.setLanguage(Locale.getDefault());
+            if(result==TextToSpeech.LANG_NOT_SUPPORTED
+                    || result ==TextToSpeech.LANG_MISSING_DATA){
+                Log.e("TTS","Este lenguaje no es soportado");
+            }
+            else{
+                speakOut();
+            }
+        }
+        else{
+            Log.e("TTS","inicializacion del lenguaje falla");
+        }
+    }
+
+    private void speakOut() {
+        String textoClinica = textViewClinica.getText().toString();
+        tts.speak(textoClinica,TextToSpeech.QUEUE_FLUSH,null);
+    }
+
 
 }

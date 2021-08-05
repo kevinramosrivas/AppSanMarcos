@@ -10,10 +10,11 @@
         android:id="@+id/tituloHuaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TituloHuaca"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +24,9 @@
         android:id="@+id/flipper_huaca"
         android:layout_width="371dp"
         android:layout_height="163dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloHuaca">
@@ -33,14 +36,36 @@
         android:id="@+id/cuerpoHuaca"
         android:layout_width="352dp"
         android:layout_height="250dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="sans-serif-medium"
+        android:orientation="vertical"
         android:text="@string/CuerpoHuaca"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/HuacaAVozPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
+        app:layout_constraintEnd_toStartOf="@+id/HuacaAVozStop"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
-        app:layout_constraintVertical_bias="0.372" />
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/HuacaAVozStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
+        app:srcCompat="@android:drawable/ic_media_pause" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

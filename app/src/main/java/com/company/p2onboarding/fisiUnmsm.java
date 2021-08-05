@@ -3,11 +3,24 @@ package com.company.p2onboarding;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class fisiUnmsm extends AppCompatActivity {
+import java.util.Locale;
+
+public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener {
     ViewFlipper v_flipper;
+    private TextToSpeech tts;
+    private TextView textViewFisi;
+    private ImageButton btnFisiPlay;
+    private ImageButton btnFisiStop;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +33,28 @@ public class fisiUnmsm extends AppCompatActivity {
         for(int image:images){
             flipperImages(image);
         }
+
+        tts = new TextToSpeech(this,this);
+        btnFisiPlay = (ImageButton) findViewById(R.id.FisiAVozPlay);
+        btnFisiStop = (ImageButton) findViewById(R.id.FisiAVozStop);
+        textViewFisi = (TextView) findViewById(R.id.cuerpoFisi);
+        btnFisiPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                speakOut();
+            }
+
+
+        });
+        btnFisiStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tts.stop();
+            }
+        });
+
+
     }
 
     public void flipperImages(int image){
@@ -32,4 +67,29 @@ public class fisiUnmsm extends AppCompatActivity {
         v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
 
     }
+
+    @Override
+    public void onInit(int status) {
+        if(status == TextToSpeech.SUCCESS){
+            int result = tts.setLanguage(Locale.getDefault());
+            if(result==TextToSpeech.LANG_NOT_SUPPORTED
+                    || result ==TextToSpeech.LANG_MISSING_DATA){
+                Log.e("TTS","Este lenguaje no es soportado");
+            }
+            else{
+                speakOut();
+            }
+        }
+        else{
+            Log.e("TTS","inicializacion del lenguaje falla");
+        }
+    }
+    private void speakOut() {
+        String textoFisi = textViewFisi.getText().toString();
+        tts.speak(textoFisi,TextToSpeech.QUEUE_FLUSH,null);
+    }
+
+
+
+
 }

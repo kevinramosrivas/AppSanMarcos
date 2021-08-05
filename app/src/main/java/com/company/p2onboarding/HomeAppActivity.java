@@ -20,7 +20,6 @@ public class HomeAppActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private ImageButton btnScan;
     private ImageButton btnContacto;
-    private ImageButton btnAcercaDe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
