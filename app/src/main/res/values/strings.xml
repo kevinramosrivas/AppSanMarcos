@@ -45,11 +45,11 @@ En sus primeros años fue implementada con un valioso equipo e instrumental méd
     <string name="CuerpoHuaca">"     *Captada: Thomas Joseph Hutchinson en 1873 \n    *Dimensiones: 62,732.83m^2(332m de largo, 137m de ancho en el extremo norte y 32m de alto en el extremo sur)
     \n    *Cultura: Lima, posteriormente bajo la cultura Ichma se convirtió en cementerio \n    *Uso original: Ceremonial \n  *Uso actual: objeto de estudios para arqueólogos, en donde se han encontrado diversos ceramios, fardos funerarios, tejidos, ofrendas y quipus.
     \n     *Declarado "Patrimonio cultural de la Nación" por el Instituto Nacional de Cultura."</string>
-    <string name="TituloAcercaDe">Sobre nosotros...</string>
+    <string name="TituloAcercaDe">¿Quienes somos?</string>
     <string name="CuerpoNosotros">"Somos un grupo de estudiantes San marquinos de la Facultad de Sistemas e Informatica cursando el quinto ciclo. \n
-    Nuestro objetivo es dar a conocer la cultura de nuestra universidad aplicando los conocimientos obtenidos a traves de nuestros estudios.\n Esta aplicacion
-        es la muestra de nuestro respeto y admiracion por la universidad y esperamos que sea todo un suceso en su version final"</string>
+    Nuestro objetivo es dar a conocer la cultura de nuestra universidad aplicando los conocimientos obtenidos a traves de nuestros estudios.\n\n Esta aplicacion es la muestra de nuestro respeto y admiracion por la universidad y esperamos que sea todo un suceso en su version final"</string>
     <string name="title_activity_quienes_somos">asdasd</string>
+
 
 
 </resources>

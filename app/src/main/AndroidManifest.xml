@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".AcercaDe"></activity>
         <activity android:name=".clinicaUniversitariaUnmsm" />
         <activity android:name=".plazaFrayTomasUnmsm" />
         <activity android:name=".huacaUnmsm" />
