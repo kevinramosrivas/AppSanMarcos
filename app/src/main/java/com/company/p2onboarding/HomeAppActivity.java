@@ -19,6 +19,7 @@ public class HomeAppActivity extends AppCompatActivity {
     private Button mButtonSingOut;
     private FirebaseAuth mAuth;
     private ImageButton btnScan;
+    private ImageButton btnGeneral;
     private ImageButton btnContacto;
     private ImageButton btnAcercaDe;
     private ImageButton btnMapa;
@@ -35,6 +36,7 @@ public class HomeAppActivity extends AppCompatActivity {
         btnContacto = (ImageButton)findViewById(R.id.contactanosImageButton) ;
         btnAcercaDe = (ImageButton)findViewById(R.id.quienesSomosImageButton);
         btnMapa = (ImageButton)findViewById(R.id.mapaImageButton);
+        btnGeneral = (ImageButton)findViewById(R.id.generalImageButton);
 
         mButtonSingOut.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -42,6 +44,14 @@ public class HomeAppActivity extends AppCompatActivity {
                 mAuth.signOut();
                 startActivity(new Intent(HomeAppActivity.this,IniciarSesionActivity.class));
                 finish();
+            }
+        });
+
+        btnGeneral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentgen = new Intent(HomeAppActivity.this,menuGeneral.class);
+                startActivity(intentgen);
             }
         });
 

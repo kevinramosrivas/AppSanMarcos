@@ -74,7 +74,6 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         v_flipper.setAutoStart(true);
         v_flipper.setInAnimation(this,android.R.anim.slide_out_right);
         v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
-
     }
 
     @Override
