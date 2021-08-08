@@ -21,6 +21,7 @@ public class HomeAppActivity extends AppCompatActivity {
     private ImageButton btnScan;
     private ImageButton btnContacto;
     private ImageButton btnAcercaDe;
+    private ImageButton btnMapa;
 
 
     @Override
@@ -33,6 +34,7 @@ public class HomeAppActivity extends AppCompatActivity {
         btnScan = (ImageButton)findViewById(R.id.qrScanImageButton);
         btnContacto = (ImageButton)findViewById(R.id.contactanosImageButton) ;
         btnAcercaDe = (ImageButton)findViewById(R.id.quienesSomosImageButton);
+        btnMapa = (ImageButton)findViewById(R.id.mapaImageButton);
 
         mButtonSingOut.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -69,6 +71,13 @@ public class HomeAppActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Uri uri = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfElwsC-Bo4fYDEfEWDO3BzrYrQAHqrxIJQ3luJnWh_vueY2g/viewform?usp=sf_link");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+        btnMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeAppActivity.this,MapaUnmsm.class);
                 startActivity(intent);
             }
         });

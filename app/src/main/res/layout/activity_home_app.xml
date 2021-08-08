@@ -100,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/qr" />
+                    android:background="@drawable/qrscanicon" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -129,17 +129,17 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/foroImageButton"
+                    android:id="@+id/mapaImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/foro2" />
+                    android:background="@drawable/iconmap" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Foro"
+                    android:text="Mapa UNMSM"
                     android:textSize="15sp"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
