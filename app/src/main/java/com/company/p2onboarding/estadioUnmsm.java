@@ -2,6 +2,7 @@ package com.company.p2onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.speech.tts.TextToSpeech;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Locale;
 
 public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener {
@@ -20,6 +23,7 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
     private TextView textViewEstadio;
     private ImageButton btnEstadioPlay;
     private ImageButton btnEstadioStop;
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,7 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
         btnEstadioPlay = (ImageButton) findViewById(R.id.estadioAVozPlay);
         btnEstadioStop = (ImageButton) findViewById(R.id.estadioAVozPause);
         textViewEstadio = (TextView) findViewById(R.id.cuerpo_estadio);
+        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederEstadio);
         btnEstadioPlay.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
@@ -52,6 +57,18 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
                 tts.stop();
             }
         });
+
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(estadioUnmsm.this,HomeAppActivity.class);
+                startActivity(intent);
+                finish();
+                tts.stop();
+            }
+        });
+
+
     }
     public void flipperImages(int image){
         ImageView imageView = new ImageView(this);

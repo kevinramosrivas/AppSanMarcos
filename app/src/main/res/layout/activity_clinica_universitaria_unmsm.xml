@@ -93,6 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/CuerpoClinica"
+                android:textAlignment="center"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="42dp"
                 tools:layout_editor_absoluteY="433dp" />

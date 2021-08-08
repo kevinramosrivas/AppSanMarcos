@@ -2,6 +2,7 @@ package com.company.p2onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.Locale;
 
 public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInitListener {
@@ -20,6 +23,7 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
     private TextView textViewHuaca;
     private ImageButton btnHuacaPlay;
     private ImageButton btnHuacaStop;
+    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
         btnHuacaPlay = (ImageButton) findViewById(R.id.HuacaAVozPlay);
         btnHuacaStop = (ImageButton) findViewById(R.id.HuacaAVozStop);
         textViewHuaca = (TextView) findViewById(R.id.cuerpoHuaca);
+        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederHuaca);
         btnHuacaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +59,17 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
                 tts.stop();
             }
         });
+
+        btnRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(huacaUnmsm.this,HomeAppActivity.class);
+                startActivity(intent);
+                finish();
+                tts.stop();
+            }
+        });
+
 
     }
 

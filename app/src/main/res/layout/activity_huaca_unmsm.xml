@@ -6,66 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".huacaUnmsm">
 
+
     <TextView
         android:id="@+id/tituloHuaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TituloHuaca"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toStartOf="@+id/HuacaAVozPlay"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
+        app:layout_constraintVertical_bias="0.187" />
 
     <ViewFlipper
         android:id="@+id/flipper_huaca"
-        android:layout_width="371dp"
-        android:layout_height="163dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
-        app:layout_constraintHorizontal_bias="0.487"
+        android:layout_width="385dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloHuaca">
+        app:layout_constraintTop_toTopOf="parent">
+
     </ViewFlipper>
-
-    <TextView
-        android:id="@+id/cuerpoHuaca"
-        android:layout_width="352dp"
-        android:layout_height="250dp"
-        android:layout_marginBottom="68dp"
-        android:fontFamily="sans-serif-medium"
-        android:orientation="vertical"
-        android:text="@string/CuerpoHuaca"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/HuacaAVozPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
-        app:layout_constraintEnd_toStartOf="@+id/HuacaAVozStop"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
-        app:srcCompat="@android:drawable/ic_media_play" />
 
     <ImageButton
         android:id="@+id/HuacaAVozStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
-        app:layout_constraintBottom_toTopOf="@+id/cuerpoHuaca"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
         app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/HuacaAVozPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/HuacaAVozStop"
+        app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flipper_huaca"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cuerpoHuaca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="vertical"
+                android:text="@string/CuerpoHuaca"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="369dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRetrocederHuaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:contentDescription="Regresar"
+        app:backgroundTint="@color/ColorSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

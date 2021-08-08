@@ -65,11 +65,11 @@
                 android:fontFamily="sans-serif-medium"
                 android:orientation="vertical"
                 android:text="@string/cuerpoBiblio"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="6dp"
                 tools:layout_editor_absoluteY="338dp" />
-
         </LinearLayout>
     </ScrollView>
 
