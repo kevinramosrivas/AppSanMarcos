@@ -60,6 +60,13 @@ public class menuGeneral extends AppCompatActivity {
                 startActivity(inteng_g4);
             }
         });
+        btnCronologia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inteng_g7 = new Intent(menuGeneral.this,cronologia.class);
+                startActivity(inteng_g7);
+            }
+        });
 
 
     }

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/titulo_cronologia"
+        android:text="@string/titulo_Cronologia"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,12 +34,11 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/iconLinea"
+                android:id="@+id/iconLinea1"
                 android:layout_width="61dp"
                 android:layout_height="62dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
-
             <TextView
                 android:id="@+id/titulo1548"
                 android:layout_width="match_parent"
@@ -48,6 +47,711 @@
                 android:text="@string/titulo1548"
                 android:textColor="#000000"
                 android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1548"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1548"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/uno"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea2"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1551"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1551"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1551"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1551"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/dos"></ImageView>
+
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea3"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1571"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1571"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1571"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1571"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/tres"></ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea4"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1574"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1574"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1574"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1574"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/cuatro"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea5"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1576"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1576"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1576"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1576"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/cinco"></ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea6"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1592"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1592"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1592"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1592"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/seis"></ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea7"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1602"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1602"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1602"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1602"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/siete"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea8"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1770"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1770"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1770"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1770"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/ocho"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea9"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1786"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1786"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1786"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1786"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/nueve"></ImageView>
+
+            <ImageView
+                android:id="@+id/iconLinea10"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1808"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1808"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1808"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1808"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/diez"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea11"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1821"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1821"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1821"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1821"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/once"></ImageView>
+
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea12"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1822"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1822"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1822"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1822"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/doce"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea13"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1856"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1856"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1856"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1856"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/trece"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea14"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1867"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1867"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1867"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1867"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/catorce"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea15"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1878"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1878"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1878"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1878"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/quince"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea16"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1881"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1881"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1881"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1881"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/dieciseis"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea17"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1900"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1900"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1900"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1900"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/diecisiete"></ImageView>
+
+            <ImageView
+                android:id="@+id/iconLinea18"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1946"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1946"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1946"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1946"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/dieciocho"></ImageView>
+
+            <ImageView
+                android:id="@+id/iconLinea19"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1951"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1951"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1951"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1951"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/diecinueve"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea20"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1960"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1960"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1960"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1960"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/veinte"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea21"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1984"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1984"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1984"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1984"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/veintiuno"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea22"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo1999"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo1999"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto1999"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto1999"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/veintidos"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iconLinea23"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo2016"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo2016"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto2016"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto2016"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/image23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/veintitres"></ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/iconLinea24"
+                android:layout_width="61dp"
+                android:layout_height="62dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/icon_lineat_tiempo"></ImageView>
+            <TextView
+                android:id="@+id/titulo2018"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/titulo2018"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/texto2018"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/texto2018"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+
+
         </LinearLayout>
 
     </ScrollView>
