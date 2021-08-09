@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cultura_activity"></activity>
+        <activity android:name=".autoridadesActivity"></activity>
+        <activity android:name=".cultura_activity" />
         <activity android:name=".sedes_activity" />
         <activity android:name=".ilustres_activity" />
         <activity android:name=".menuGeneral" />

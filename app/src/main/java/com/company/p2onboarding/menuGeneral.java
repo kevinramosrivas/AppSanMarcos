@@ -36,6 +36,15 @@ public class menuGeneral extends AppCompatActivity {
             }
         });
 
+        btnAutoridades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_g3 = new Intent(menuGeneral.this,autoridadesActivity.class);
+                startActivity(intent_g3);
+            }
+        });
+
+
         btnSedes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
