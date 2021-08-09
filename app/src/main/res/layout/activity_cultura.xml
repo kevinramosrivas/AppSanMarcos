@@ -25,17 +25,15 @@
 
     <ViewFlipper
         android:id="@+id/flipper_cultura"
-        android:layout_width="330dp"
-        android:layout_height="357dp"
+        android:layout_width="362dp"
+        android:layout_height="322dp"
         android:layout_marginTop="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cuerpo_cultura"
-        app:layout_constraintVertical_bias="0.138">
-
-    </ViewFlipper>
+        app:layout_constraintVertical_bias="0.138"/>
 
     <TextView
         android:id="@+id/cuerpo_cultura"

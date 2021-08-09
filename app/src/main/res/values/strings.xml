@@ -76,4 +76,40 @@ En sus primeros años fue implementada con un valioso equipo e instrumental méd
     <string name="texto_ing_agro">Perteneciente a la Facultad de Química e Ingeniería Química, la escuela fue fundada en el año 2008 en el distrito más poblado de nuestro país, como parte de la política de descentralización de la UNMSM. Se ha constituido con el propósito de cooperar en el desarrollo agroindustrial nacional a través de la formación integral de profesionales competentes con responsabilidad social involucrados en la investigación científica para contribuir al desarrollo del país y de una de sus principales fuentes de recursos como la agricultura.</string>
     <string name="titulo_culto">Cultura UNMSM</string>
     <string name="texto_cultura">La Universidad Nacional Mayor de San Marcos no solo destaca por su apartado academico,tambien,posee en sus valores la "cultura san marquina" denotada por actividades extracademicas como musica,baile,eventos,etc.Incluyendo momentos iconicos que todo estudiante de la universidad ha pasado en su estancia</string>
+    <string name="titulo_cronologia">Cronologia de la UNMSM</string>
+   //cronologia unmsm
+    <string name="titulo1548">1548: Creación de UNMSM</string>
+    <string name="texto1548">El origen de la Universidad Nacional Mayor de San Marcos, es también el origen de la educación superior en el Perú y América, el cual se remonta a la creación de los Estudios Generales que funcionaron en los claustros del Convento del Rosario de la orden de los predicadores, actual Convento de Santo Domingo.\n La creación de los Estudios Generales o Universidad de Lima, respondió al objetivo de mantener y garantizar el orden colonial, y para desarrollar el conocimiento. De allí la preocupación de la Iglesia y la Corona española por su funcionamiento, pues de ello dependía la formación de nuevos dirigentes para la administración colonial y para el clero católico.</string>
+    <string name="titulo1551">1551: Fundación de la UNMSM</string>
+    <string name="texto1551">Fray Tomás de San Martín, padre dominico, y el capitán Juan Jerónimo de Aliaga, por encargo del Cabildo limeño, fueron los gestores de la fundación de la universidad antes del emperador Carlos I de España y V del Sacro Imperio Romano Germánico y la reina Juana I de Castilla.</string>
+    <string name="titulo1571">1571: Universidad Real y Pontificia</string>
+    <string name="texto1571">El papa Pío V otorga la Bula papal de confirmación de fundación de la Universidad limeña el 25 de julio de 1571. Así, la universidad adquiere validez internacional y es titulada, por primera vez, como Real y Pontificia. Este documento ratifica la antigüedad de San Marcos en América</string>
+    <string name="titulo1574">1574: Elección de nombre</string>
+    <string name="texto1574">Ya en su segundo local, en la iglesia de San Marcelo, en un terrero perteneciente a la orden de los agustinos, la universidad limeña elige a San Marcos como su patrón. El sorteo para la elección, se dio entre los 4 nombres de los evangelistas de la Biblia.</string>
+    <string name="titulo1576">1576: Tercer Local de San Marcos</string>
+    <string name="texto1576">En 1576, se destina para la Universidad el local de San Juan de la Penitencia (plaza de la Inquisición, actualmente plaza Bolívar), espacio en donde estuvo por más tiempo durante la época colonial, permaneciendo allí por casi tres siglos (hasta 1867)</string>
+    <string name="titulo1592">1592: Inauguración del Colegio Real San Felipe y San Marcos.</string>
+    <string name="texto1592">Llamado también «Colegio de los hijos de los conquistadores españoles», fue fundado por el virrey Toledo y culminado  durante el  virreinato  de  García  Hurtado  de  Mendoza, quien lo inauguró el 28 de junio de 1592.  El  rector  de  San Marcos ejercía la rectoría del Colegio, por lo que existía una relación de cooperación entre ambas entidades educativas.</string>
+    <string name="titulo1602">1602: Registro del primer escudo impreso de San Marcos.</string>
+    <string name="texto1602">Existe, para 1602, un escudo impreso por el italiano Antonio Ricardo.</string>
+    <string name="titulo1770">1770 Creación del Real Convictorio de San Carlos.</string>
+    <string name="texto1770">El 15 de junio el virrey Manuel Amat y Juniet crea el Real Convictorio de San Carlos. Este espacio se formó con las becas del Colegio Real de San Martín y del Colegio Real de San Felipe y San Marcos, en julio de 1770, por disposición del virrey Amat, y tenía el propósito de preparar a los futuros estudiantes de la Universidad.</string>
+    <string name="titulo1786">1786: Toribio Rodríguez de Mendoza, elegido Rector del Convictorio de San Carlos</string>
+    <string name="texto1786">Se promulgan reformas curriculares en San Carlos con el objetivo de contrarrestar las ideas escolásticas y asegurar la autoridad real.</string>
+    <string name="titulo1808">1808: Creación de San Fernando.</string>
+    <string name="texto1808">Creación del Colegio San Fernando. Tiene como plan de estudio el más distinguido de fines del siglo XVII. Es el antecedente de la Facultad de Medicina de San Marcos.</string>
+    <string name="titulo1821">1821: San Marcos en la independencia del Perú.</string>
+    <string name="texto1821">El 30 de julio, la Universidad presta juramento a la independencia del Perú. El 18 de octubre, jura al Estatuto Provisorio promulgado por el Gral. José de San Martín.
+        \n El 30 de julio, la Universidad presta juramento a la independencia del Perú. El 18 de octubre, jura al Estatuto Provisorio promulgado por el Gral. José de San Martín.</string>
+    <string name="titulo1822">1822: Juramento al Congreso Constituyente.</string>
+    <string name="texto1822">26 de septiembre. Juramento al Soberano Congreso Constituyente del Perú por autoridades, maestros y alumnos del Colegio de Independencia. Este mismo año, San Marcos dona cerca de 50 mil libros para la formación de la Biblioteca Nacional.</string>
+    <string name="titulo1856">1856: Creación de la Facultad de Medicina.</string>
+    <string name="texto1856">Creación de la Facultad de Medicina de San Fernando. Cayetano Heredia sería su primer Decano.</string>
+    <string name="titulo1867">1867: Cuarto Local de San Marcos</string>
+    <string name="texto1867">Debido a la ampliación de las funciones legislativas, se procede con el traslado de la Universidad de San Marcos al Convictorio de San Carlos.</string>
+    <string name="titulo1878">1878: Adquiere título de “Mayor”</string>
+    <string name="texto1878">Con el reglamento de instrucción pública, se instituye la clasificación de las universidades peruanas en mayores y menores. San Marcos adquiere el primer título.</string>
+
+
+    //
 </resources>
