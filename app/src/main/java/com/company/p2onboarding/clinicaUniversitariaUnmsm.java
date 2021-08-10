@@ -24,7 +24,6 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
     private TextView textViewClinica;
     private ImageButton btnClinicaPlay;
     private ImageButton btnClinicaStop;
-    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,6 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
         btnClinicaPlay = (ImageButton) findViewById(R.id.clinicaVozPlay);
         btnClinicaStop = (ImageButton) findViewById(R.id.ClinicaAVozStop);
         textViewClinica = (TextView) findViewById(R.id.cuerpoClinica);
-        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederClinica);
         btnClinicaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,15 +52,6 @@ public class clinicaUniversitariaUnmsm extends AppCompatActivity implements Text
         btnClinicaStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tts.stop();
-            }
-        });
-        btnRetroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(clinicaUniversitariaUnmsm.this,HomeAppActivity.class);
-                startActivity(intent);
-                finish();
                 tts.stop();
             }
         });

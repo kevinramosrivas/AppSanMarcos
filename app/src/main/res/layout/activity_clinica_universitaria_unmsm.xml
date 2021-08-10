@@ -7,78 +7,10 @@
     tools:context=".clinicaUniversitariaUnmsm">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnRetrocederClinica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:clickable="true"
-        android:contentDescription="Regresar"
-        app:backgroundTint="@color/ColorSplash"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/abc_vector_test" />
-
-    <ViewFlipper
-        android:id="@+id/flipper_clinica"
-        android:layout_width="391dp"
-        android:layout_height="262dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"><![CDATA[
-        app:layout_constraintVertical_bias="0.181">
-
-        ]]></ViewFlipper>
-
-    <TextView
-        android:id="@+id/tituloClinica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TituloClinica"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
-        app:layout_constraintEnd_toStartOf="@+id/clinicaVozPlay"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/clinicaVozPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:contentDescription="Iniciar la reproduccion de la  informacion"
-        app:layout_constraintEnd_toStartOf="@+id/ClinicaAVozStop"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
-        app:srcCompat="@android:drawable/ic_media_play" />
-
-    <ImageButton
-        android:id="@+id/ClinicaAVozStop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="28dp"
-        android:contentDescription="Detener la reproduccion de la  informacion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
-        app:srcCompat="@android:drawable/ic_media_pause" />
-
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="392dp"
-        android:layout_height="314dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -88,12 +20,75 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ViewFlipper
+                android:id="@+id/flipper_clinica"
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:layout_marginTop="72dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ViewFlipper>
+
             <TextView
+                android:id="@+id/tituloClinica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TituloClinica"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toStartOf="@+id/clinicaVozPlay"
+                app:layout_constraintHorizontal_bias="0.033"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/ClinicaAVozStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Detener la reproduccion de la  informacion"
+                    app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/flipper_clinica"
+                    app:layout_constraintVertical_bias="0.074"
+                    app:srcCompat="@android:drawable/ic_media_pause"
+                    tools:layout_conversion_absoluteHeight="52dp"
+                    tools:layout_conversion_absoluteWidth="56dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="311dp" />
+
+                <ImageButton
+                    android:id="@+id/clinicaVozPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Iniciar la reproduccion de la  informacion"
+                    app:srcCompat="@android:drawable/ic_media_play"
+                    tools:layout_conversion_absoluteHeight="52dp"
+                    tools:layout_conversion_absoluteWidth="56dp"
+                    tools:layout_editor_absoluteX="88dp"
+                    tools:layout_editor_absoluteY="311dp" />
+
+            </LinearLayout>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpoClinica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/CuerpoClinica"
-                android:textAlignment="center"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="42dp"
                 tools:layout_editor_absoluteY="433dp" />
