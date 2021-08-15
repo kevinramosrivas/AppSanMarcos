@@ -13,6 +13,7 @@
         android:layout_marginStart="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -312,8 +313,8 @@
 
             <ImageView
                 android:id="@+id/image9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="226dp"
+                android:layout_height="317dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/ocho"></ImageView>
 
@@ -410,8 +411,8 @@
 
             <ImageView
                 android:id="@+id/image12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="333dp"
+                android:layout_height="481dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/once"></ImageView>
 
@@ -477,7 +478,7 @@
             <ImageView
                 android:id="@+id/image14"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="227dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/trece"></ImageView>
 
@@ -510,7 +511,7 @@
             <ImageView
                 android:id="@+id/image15"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="278dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/catorce"></ImageView>
 
@@ -543,7 +544,7 @@
             <ImageView
                 android:id="@+id/image16"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="254dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/quince"></ImageView>
 
@@ -640,7 +641,7 @@
             <ImageView
                 android:id="@+id/image19"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="329dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/dieciocho"></ImageView>
 
@@ -672,8 +673,8 @@
 
             <ImageView
                 android:id="@+id/image20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="328dp"
+                android:layout_height="441dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/diecinueve"></ImageView>
 
@@ -739,7 +740,7 @@
             <ImageView
                 android:id="@+id/image22"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="274dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/veintiuno"></ImageView>
 
@@ -771,8 +772,8 @@
 
             <ImageView
                 android:id="@+id/image23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="330dp"
+                android:layout_height="383dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/veintidos"></ImageView>
 
@@ -804,8 +805,8 @@
 
             <ImageView
                 android:id="@+id/image24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="290dp"
+                android:layout_height="429dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/veintitres"></ImageView>
 
