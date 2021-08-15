@@ -26,7 +26,8 @@
         <activity android:name=".cultura_activity" />
         <activity android:name=".sedes_activity" />
         <activity android:name=".ilustres_activity" />
-        <activity android:name=".menuGeneral" />
+        <activity android:name=".menuGeneral"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MapaUnmsm"
             android:exported="true" />
@@ -50,7 +51,8 @@
         <activity android:name=".bibliotecaUnmsm" />
         <activity android:name=".fisiUnmsm" />
         <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".HomeAppActivity" />
+        <activity android:name=".HomeAppActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".RegistrarseActivity" />
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".SplashActivity">

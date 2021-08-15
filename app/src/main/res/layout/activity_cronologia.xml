@@ -28,7 +28,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1548"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -37,7 +37,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1548"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,8 +48,8 @@
 
             <ImageView
                 android:id="@+id/image1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="355dp"
+                android:layout_height="252dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/cero"></ImageView>
 
@@ -61,7 +61,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1551"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -70,7 +70,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1551"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,8 +81,8 @@
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="261dp"
+                android:layout_height="358dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/uno"></ImageView>
 
@@ -94,7 +94,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1571"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -103,7 +103,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1571"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -114,8 +114,8 @@
 
             <ImageView
                 android:id="@+id/image3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="361dp"
+                android:layout_height="289dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/dos"></ImageView>
 
@@ -127,7 +127,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1574"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -136,7 +136,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1574"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             <ImageView
                 android:id="@+id/image4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="273dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/tres"></ImageView>
 
@@ -160,7 +160,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1576"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -169,7 +169,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1576"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
             <ImageView
                 android:id="@+id/image5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="280dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/cuatro"></ImageView>
 
@@ -193,7 +193,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1592"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -202,7 +202,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1592"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
             <ImageView
                 android:id="@+id/image6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="268dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/cinco"></ImageView>
 
@@ -226,7 +226,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1602"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -235,7 +235,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1602"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -259,7 +259,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1770"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -268,7 +268,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1770"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -280,7 +280,7 @@
             <ImageView
                 android:id="@+id/image8"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="282dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/siete"></ImageView>
 
@@ -292,7 +292,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1786"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -301,7 +301,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1786"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -324,7 +324,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1808"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -333,7 +333,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1808"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -357,7 +357,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1821"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -366,7 +366,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1821"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -390,7 +390,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1822"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -399,7 +399,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1822"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -423,7 +423,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1856"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -432,7 +432,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1856"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -456,7 +456,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1867"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -465,7 +465,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1867"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -489,7 +489,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1878"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -498,7 +498,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1878"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -522,7 +522,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1881"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -531,7 +531,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1881"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -555,7 +555,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1900"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -564,7 +564,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1900"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -587,7 +587,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1946"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -596,7 +596,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1946"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -619,7 +619,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1951"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -628,7 +628,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1951"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -652,7 +652,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1960"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -661,7 +661,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1960"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -685,7 +685,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1984"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -694,7 +694,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1984"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -718,7 +718,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo1999"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -727,7 +727,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto1999"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -751,7 +751,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo2016"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -760,7 +760,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto2016"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -784,7 +784,7 @@
                 android:layout_margin="20dp"
                 android:background="@drawable/icon_lineat_tiempo"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/titulo2018"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -793,7 +793,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/texto2018"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -23,7 +23,7 @@
             <ViewFlipper
                 android:id="@+id/flipper_clinica"
                 android:layout_width="match_parent"
-                android:layout_height="221dp"
+                android:layout_height="239dp"
                 android:layout_marginTop="72dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

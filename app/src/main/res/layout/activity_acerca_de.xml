@@ -6,50 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".AcercaDe">
 
+
     <TextView
         android:id="@+id/tituloAcercaDe"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/TituloAcercaDe"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imagen_acercaDe"
-        android:layout_width="351dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/imageView3"
+        android:layout_width="134dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloAcercaDe"
-        app:srcCompat="@drawable/logo_fisi_unmsm" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/visita_san_marcos_logo" />
 
     <TextView
-        android:id="@+id/cuerpoAcercaDe"
-        android:layout_width="376dp"
-        android:layout_height="244dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/CuerpoNosotros"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionapp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen_acercaDe" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/boton_donar"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="24dp"
         android:background="#FF9800"
         android:fontFamily="sans-serif-medium"
         android:text="Apoyanos"
@@ -57,9 +59,64 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cuerpoAcercaDe"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="353dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewPorQueLoHacemos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/porQueLoHacemos"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewEquipo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/TextViewGitHub"
+            android:layout_width="93dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/Github"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"></TextView>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textViewEquipo"
+            android:layout_width="409dp"
+            android:layout_height="186dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="180dp"
+            android:text="@string/AcercaDeVisitaSanMarcos"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
