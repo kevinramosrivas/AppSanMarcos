@@ -6,45 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ilustres_activity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="730dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:id="@+id/titulo_Ilustres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/titulo_ilustres"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </LinearLayout>
-
     <ScrollView
         android:id="@+id/scroll_ilustres"
-        android:layout_width="410dp"
-        android:layout_height="727dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_Ilustres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/titulo_ilustres"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/titulo_ilutres1"
@@ -54,26 +43,26 @@
                 android:text="@string/vargas_llosa"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/llosa"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="306dp"
+                android:layout_height="193dp"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@drawable/mario_vargas"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpo_llosa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/texto_llosa"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="14sp"></TextView>
+                android:textSize="18sp"></me.biubiubiu.justifytext.library.JustifyTextView>
 
             <TextView
                 android:id="@+id/titulo_ilutres2"
@@ -83,26 +72,26 @@
                 android:text="@string/maria_arguedas"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/arguedas"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="281dp"
+                android:layout_height="207dp"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@drawable/maria_arguedas"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpo_arguedas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/texto_arguedas"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="14sp"></TextView>
+                android:textSize="18sp"></me.biubiubiu.justifytext.library.JustifyTextView>
 
 
             <TextView
@@ -113,26 +102,26 @@
                 android:text="@string/luis_lumbreras"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/lumbreras"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="331dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@drawable/luis_lumbreras"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpo_lumbreras"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/texto_lumbreras"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="14sp"></TextView>
+                android:textSize="18sp"></me.biubiubiu.justifytext.library.JustifyTextView>
 
             <TextView
                 android:id="@+id/titulo_ilutres4"
@@ -142,26 +131,26 @@
                 android:text="@string/daniel_alcides"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/carrion"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="283dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@drawable/daniel_alcides"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/daniel_carrion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/texto_carrion"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="14sp"></TextView>
+                android:textSize="18sp"></me.biubiubiu.justifytext.library.JustifyTextView>
 
             <TextView
                 android:id="@+id/titulo_ilutres5"
@@ -171,26 +160,26 @@
                 android:text="@string/jorge_basadre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:id="@+id/basado"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="311dp"
+                android:layout_height="198dp"
+                android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@drawable/jorge_basadre"></ImageView>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/jorge_basadre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/texto_basadre"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="14sp"></TextView>
+                android:textSize="18sp"></me.biubiubiu.justifytext.library.JustifyTextView>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

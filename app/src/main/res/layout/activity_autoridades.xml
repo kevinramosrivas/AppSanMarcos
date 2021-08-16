@@ -6,29 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".autoridadesActivity">
 
-    <TextView
-        android:id="@+id/titulo_autoridades"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/titulo_auto"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
         android:id="@+id/scroll_ilustres"
-        android:layout_width="418dp"
-        android:layout_height="586dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_autoridades"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
@@ -37,23 +23,39 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/titulo_autoridades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/titulo_auto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
                 android:id="@+id/titulo_auto1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/auto1"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="16sp"
+                android:text="@string/auto1"
                 android:textAlignment="center"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/rectora_imagen"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/rectora"
-                android:layout_marginTop="20dp"
+                android:layout_width="239dp"
+                android:layout_height="299dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rectora">
 
             </ImageView>
 
@@ -61,53 +63,53 @@
                 android:id="@+id/titulo_auto2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/auto2"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="16sp"
+                android:text="@string/auto2"
                 android:textAlignment="center"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/rectorpre_imagen"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/pregradorector"
-                android:layout_marginTop="20dp"
+                android:layout_width="239dp"
+                android:layout_height="299dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp">
-            </ImageView>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/pregradorec"></ImageView>
 
 
             <TextView
                 android:id="@+id/titulo_auto3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/auto3"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="16sp"
+                android:text="@string/auto3"
                 android:textAlignment="center"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/pos_imagen"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/posgradorector"
-                android:layout_marginTop="20dp"
+                android:layout_width="239dp"
+                android:layout_height="299dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginBottom="40dp">
-            </ImageView>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/postgradorec"></ImageView>
 
             <Button
                 android:id="@+id/boton_auto"
                 android:layout_width="153dp"
                 android:layout_height="32dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="130dp"
                 android:layout_marginBottom="20dp"
                 android:background="#FF9800"
                 android:text="Mas Informacion..."
-                android:textStyle="bold">
-            </Button>
+                android:textStyle="bold"></Button>
         </LinearLayout>
 
 

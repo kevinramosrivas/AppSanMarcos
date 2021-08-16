@@ -23,7 +23,6 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
     private TextView textViewBiblioteca;
     private ImageButton btnBibliotecaPlay;
     private ImageButton btnBibliotecaStop;
-    private FloatingActionButton btnRetroceder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,6 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         btnBibliotecaPlay = (ImageButton) findViewById(R.id.bibliotecaAVozPlay);
         btnBibliotecaStop = (ImageButton) findViewById(R.id.bibliotecaAVozStop);
         textViewBiblioteca = (TextView) findViewById(R.id.textViewBiblioteca);
-        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederBiblioteca);
         btnBibliotecaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,15 +50,6 @@ public class bibliotecaUnmsm extends AppCompatActivity implements TextToSpeech.O
         btnBibliotecaStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tts.stop();
-            }
-        });
-        btnRetroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(bibliotecaUnmsm.this,HomeAppActivity.class);
-                startActivity(intent);
-                finish();
                 tts.stop();
             }
         });

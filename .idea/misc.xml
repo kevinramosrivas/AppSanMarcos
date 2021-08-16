@@ -9,14 +9,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_acerca_de.xml" value="0.264" />
-        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_biblioteca_unmsm.xml" value="0.176" />
+        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_autoridades.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_biblioteca_unmsm.xml" value="0.264" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_clinica_universitaria_unmsm.xml" value="0.176" />
-        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_cronologia.xml" value="0.1" />
+        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_cronologia.xml" value="0.10537680846469445" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_cultura.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_estadio_unmsm.xml" value="0.21981981981981982" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_fisi_unmsm.xml" value="0.2" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_home_app.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_ilustres.xml" value="0.4" />
+        <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_ilustres.xml" value="0.2" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_mapa_unmsm.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/activity_menu_general.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ramos/AndroidStudioProjects/AppSanMarcos/app/src/main/res/layout/fragment_maps.xml" value="0.25416666666666665" />
