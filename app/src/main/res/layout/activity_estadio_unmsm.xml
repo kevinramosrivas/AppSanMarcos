@@ -5,112 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF8F8"
-    tools:context=".estadioUnmsm" >
-
-
-    <TextView
-        android:id="@+id/titulo_estadio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TituloEstadio"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
-        app:layout_constraintEnd_toStartOf="@+id/estadioAVozPlay"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ViewFlipper
-        android:id="@+id/v_flipper"
-        android:layout_width="353dp"
-        android:layout_height="235dp"
-        android:layout_marginTop="88dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </ViewFlipper>
-
-    <ImageButton
-        android:id="@+id/estadioAVozPlay"
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:contentDescription="Iniciar la reproduccion de la  informacion"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
-        app:layout_constraintEnd_toStartOf="@+id/estadioAVozPause"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.2"
-        app:srcCompat="@android:drawable/ic_media_play" />
-
-    <ImageButton
-        android:id="@+id/estadioAVozPause"
-        android:layout_width="56dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="Detener la reproduccion de la  informacion"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_media_pause" />
+    tools:context=".estadioUnmsm">
 
     <ScrollView
         android:id="@+id/scrollView6"
         android:layout_width="match_parent"
-        android:layout_height="285dp"
-        android:layout_marginTop="72dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_flipper"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_marginTop="88dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/estadioAVozPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Iniciar la reproduccion de la  informacion"
+                    android:text="Button"
+                    app:srcCompat="@android:drawable/ic_media_play" />
+
+                <ImageButton
+                    android:id="@+id/estadioAVozPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Detener la reproduccion de la  informacion"
+                    app:srcCompat="@android:drawable/ic_media_pause" />
+
+
+            </LinearLayout>
+
             <TextView
+                android:id="@+id/titulo_estadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TituloEstadio"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpo_estadio"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
                 android:text="@string/cuerpoEstadio"
-                android:textAlignment="center"
                 android:textColor="#050505"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="27dp"
-                tools:layout_editor_absoluteY="340dp" />
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnRetrocederEstadio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:clickable="true"
-        android:contentDescription="Regresar"
-        app:backgroundTint="@color/ColorSplash"
-        app:layout_constraintBottom_toTopOf="@+id/v_flipper"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/abc_vector_test" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

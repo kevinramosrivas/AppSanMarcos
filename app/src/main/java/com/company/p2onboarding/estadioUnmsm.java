@@ -23,7 +23,6 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
     private TextView textViewEstadio;
     private ImageButton btnEstadioPlay;
     private ImageButton btnEstadioStop;
-    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +40,6 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
         btnEstadioPlay = (ImageButton) findViewById(R.id.estadioAVozPlay);
         btnEstadioStop = (ImageButton) findViewById(R.id.estadioAVozPause);
         textViewEstadio = (TextView) findViewById(R.id.cuerpo_estadio);
-        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederEstadio);
         btnEstadioPlay.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
@@ -58,15 +56,6 @@ public class estadioUnmsm extends AppCompatActivity implements TextToSpeech.OnIn
             }
         });
 
-        btnRetroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(estadioUnmsm.this,HomeAppActivity.class);
-                startActivity(intent);
-                finish();
-                tts.stop();
-            }
-        });
 
 
     }
