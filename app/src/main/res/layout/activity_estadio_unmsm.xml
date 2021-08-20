@@ -31,6 +31,17 @@
                 app:layout_constraintTop_toTopOf="parent">
 
             </ViewFlipper>
+            <TextView
+                android:id="@+id/titulo_estadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/TituloEstadio"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,17 +65,6 @@
 
 
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/titulo_estadio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/TituloEstadio"
-                android:textColor="#000000"
-                android:textSize="24sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/cuerpo_estadio"

@@ -23,7 +23,6 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
     private TextView textViewFisi;
     private ImageButton btnFisiPlay;
     private ImageButton btnFisiStop;
-    private FloatingActionButton btnRetroceder;
 
 
     @Override
@@ -43,7 +42,6 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
         btnFisiPlay = (ImageButton) findViewById(R.id.FisiAVozPlay);
         btnFisiStop = (ImageButton) findViewById(R.id.FisiAVozStop);
         textViewFisi = (TextView) findViewById(R.id.cuerpoFisi);
-        btnRetroceder = (FloatingActionButton)findViewById(R.id.btnRetrocederFisi);
         btnFisiPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,15 +54,6 @@ public class fisiUnmsm extends AppCompatActivity implements TextToSpeech.OnInitL
         btnFisiStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tts.stop();
-            }
-        });
-        btnRetroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(fisiUnmsm.this,HomeAppActivity.class);
-                startActivity(intent);
-                finish();
                 tts.stop();
             }
         });

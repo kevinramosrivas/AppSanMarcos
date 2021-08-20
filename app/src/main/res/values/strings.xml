@@ -2,7 +2,7 @@
     <string name="app_name">Visita San Marcos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="descripcion1">Comparte tus experiencias con otros usuarios</string>
+    <string name="descripcion1">Encuentra puntos importantes en el mapa de la UNMSM</string>
     <string name="descripcion2">Envianos tus sugerencias para mejorar la app</string>
     <string name="descripcion3">Revisa mas de la historia de la universidad</string>
     <string name="descripcion5">Escanea los codigos QR en los principales puntos de la universidad</string>
@@ -22,23 +22,17 @@
     <string name="CerrarSesion_text">Salir</string>
     <string name="TituloFISI">Facultad de Ingenieria de Sistemas e Informatica</string>
     <string name="TituloEstadio">Estadio Unmsm</string>
-    <string name="cuerpoEstadio">"- Fecha de fundación: 13 de Mayo de 1951(Conmemorando  los 400 años de fundación de la UNMSM).\n- Ubicación: Jr. Amézaga s/n  con la Av. Venezuela s/n, en la ciudad de Lima, Perú.\n- Dimensiones: 105 x 70 m.\n- Capacidad: 32000 espectadores. \n- Es el primer estadio de gran capacidad en el Perú,en el año de su fundación fue escenario de los juegos Olímpicos Especiales.\nEl estadio fue sede anfitrión de diversos eventos deportivos.\n- Juegos deportivos universitarios nacionales (edición especial, 1951).\n- Juegos deportivos universitarios nacionales (V edición, 1955).\n- Campeonato Sudamericano de Fútbol Sub-17 de 2019.\n- Juegos Panamericanos de 2019.\n"</string>
+    <string name="cuerpoEstadio">"Fecha de fundación: 13 de Mayo de 1951(Conmemorando  los 400 años de fundación de la UNMSM).\n\nUbicación: Jr. Amézaga s/n  con la Av. Venezuela s/n, en la ciudad de Lima, Perú.\n\nDimensiones: 105 x 70 m.\n\nCapacidad: 32000 espectadores.\n\nEs el primer estadio de gran capacidad en el Perú,en el año de su fundación fue escenario de los juegos Olímpicos Especiales.\n\nEl estadio fue sede anfitrión de diversos eventos deportivos.\n\nJuegos deportivos universitarios nacionales (edición especial, 1951).\n\nJuegos deportivos universitarios nacionales (V edición, 1955).\n\nCampeonato Sudamericano de Fútbol Sub-17 de 2019.\n\nJuegos Panamericanos de 2019.\n"</string>
     <string name="TituloBiblio">Bilioteca Pedro Zulen</string>
     <string name="cuerpoBiblio">"- Fecha de fundación: Diciembre de 1999 \n- Ubicación: Plaza Cívica del campus universitario de la UNMSM \n- Superficie: 19.800 m^2\n- Capacidad: 2500 personas\n\nEs la biblioteca universitaria más grande del Perú y una de las más grandes de América Latina, está constituida de cuatroedificios unidos entre sí, tiene 5 niveles, cuenta con un escenario multifuncional, conexión a Internet, sistemas de videoconferencia, proyectores multimedia, radio enlaces y equipos de audio y sonido profesional.\n\nLa biblioteca tiene como visión convertirse en un centro de información y modelo de biblioteca universitaria que brindeservicios de información innovadores a los usuarios internos y externos.Para ello, tiene como misión el ser un centro de recursos de información y difusión del conocimiento científico, tecnológico y humanístico que contribuya en la formación académico profesional y la investigación\n"</string>
 
-    <string name="CuerpoFisi">"   Fundación: 1996 como escuela / 2000 como facultad \n     Ubicación: Ciudad universitaria de la Universidad de San Marcos
-    \n Misión: Generar y difundir conocimiento científico, tecnológico y humanístico, formando profesionales e investigadores lideres, con valores y respetuosos de la diversidad
-	cultural.
-    \n Visión: Ser una facultad referente de excelencia y calidad en la formación profesional e investigación en las ingenierías de Sistemas, de software y de ciencia de la
-	computación, reconocida nacional e internacionalmente."</string>
+    <string name="CuerpoFisi">"Fundación: 1996 como escuela / 2000 como facultad \n\nUbicación: Ciudad universitaria de la Universidad de San Marcos\n\nMisión: Generar y difundir conocimiento científico, tecnológico y humanístico, formando profesionales e investigadores lideres, con valores y respetuosos de la diversidadcultural.\n\nVisión: Ser una facultad referente de excelencia y calidad en la formación profesional e investigación en las ingenierías de Sistemas, de software y de ciencia de lacomputación, reconocida nacional e internacionalmente.\n"</string>
 
     <string name="TituloClinica">Clinica Universitaria</string>
     <string name="CuerpoClinica">"En 1941 se crea en San Marcos los Servicios Médicos, en el 2do piso de la Facultad de Ciencias en el Parque Universitario.\n\nEn 1982 se inaugura el nuevo local en el corazón de la Ciudad Universitaria, con el nombre de Centro Universitario de Salud y Trabajo Social.\n\nEn 1998 se convierte en Clínica Universitaria, la cual a su vez amplía la cobertura externa al púbico en general.\n\nEn sus primeros años fue implementada con un valioso equipo e instrumental médico de última generación, que según indicó el Rector sanmarquino de ese tiempo, el doctor Manuel Paredes Manrique permitirá realizar exámenes de apoyo diagnóstico tanto de laboratorio como radiológicos, ecográficos, entre otros servicios que corresponden a una clínica moderna y con doce horas de atención diaria.\nAlgunos consultorios actuales son: \n- Medicina General\n- Dermatologia\n- Ginecologia\n- Traumatologia\n- Odontologia\n"</string>
 
     <string name="TituloHuaca">Huaca San Marcos</string>
-    <string name="CuerpoHuaca">"*Captada: Thomas Joseph Hutchinson en 1873 \n    *Dimensiones: 62,732.83m^2(332m de largo, 137m de ancho en el extremo norte y 32m de alto en el extremo sur)
-    \n    *Cultura: Lima, posteriormente bajo la cultura Ichma se convirtió en cementerio \n    *Uso original: Ceremonial \n  *Uso actual: objeto de estudios para arqueólogos, en donde se han encontrado diversos ceramios, fardos funerarios, tejidos, ofrendas y quipus.
-    \n     *Declarado "Patrimonio cultural de la Nación" por el Instituto Nacional de Cultura."</string>
+    <string name="CuerpoHuaca">"Captada: Thomas Joseph Hutchinson en 1873 \n\nDimensiones: 62,732.83m^2(332m de largo, 137m de ancho en el extremo norte y 32m de alto en el extremo sur)\n\nCultura: Lima, posteriormente bajo la cultura Ichma se convirtió en cementerio \n\nUso original: Ceremonial\n\nUso actual: Objeto de estudios para arqueólogos, en donde se han encontrado diversos ceramios, fardos funerarios, tejidos, ofrendas y quipus.\n\nDeclarado "Patrimonio cultural de la Nación" por el Instituto Nacional de Cultura.\n"</string>
     <string name="TituloAcercaDe">Acerca de Visita San Marcos</string>
     <string name="versionapp">Version 1.0</string>
     <string name="AcercaDeVisitaSanMarcos">\nEquipo de Visita San Marcos:\n- Araujo Santillan Pedro\n- Huarcaya Tacas Edward\n- Ramos Rivas Kevin\n- Calderon Herrera Miguel\n- Fanola Tarazona Jonathan\n</string>

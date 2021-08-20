@@ -23,7 +23,6 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
     private TextView textViewHuaca;
     private ImageButton btnHuacaPlay;
     private ImageButton btnHuacaStop;
-    private FloatingActionButton btnRetroceder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,6 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
         btnHuacaPlay = (ImageButton) findViewById(R.id.HuacaAVozPlay);
         btnHuacaStop = (ImageButton) findViewById(R.id.HuacaAVozStop);
         textViewHuaca = (TextView) findViewById(R.id.cuerpoHuaca);
-        btnRetroceder  =(FloatingActionButton) findViewById(R.id.btnRetrocederHuaca);
         btnHuacaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,15 +58,6 @@ public class huacaUnmsm extends AppCompatActivity implements TextToSpeech.OnInit
             }
         });
 
-        btnRetroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(huacaUnmsm.this,HomeAppActivity.class);
-                startActivity(intent);
-                finish();
-                tts.stop();
-            }
-        });
 
 
     }
