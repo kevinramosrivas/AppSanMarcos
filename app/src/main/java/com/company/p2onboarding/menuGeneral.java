@@ -14,7 +14,6 @@ public class menuGeneral extends AppCompatActivity {
     private ImageButton btnAutoridades;
     private ImageButton btnCultura;
     private ImageButton btnSedes;
-    private ImageButton btnLugares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +25,6 @@ public class menuGeneral extends AppCompatActivity {
         btnAutoridades = (ImageButton)findViewById(R.id.autoridadesImageButton);
         btnCultura = (ImageButton)findViewById(R.id.culturaImageButton);
         btnSedes = (ImageButton)findViewById(R.id.sedesImageButton);
-        btnLugares = (ImageButton)findViewById(R.id.lugaresImageButton);
 
         btnPersonajes.setOnClickListener(new View.OnClickListener() {
             @Override

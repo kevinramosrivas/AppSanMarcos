@@ -210,38 +210,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardLugares"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:foregroundGravity="left"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/lugaresImageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/icono_importantes" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Mejores Lugares"
-                    android:textSize="15sp"></TextView>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
 
     </androidx.gridlayout.widget.GridLayout>
 
