@@ -2,8 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '30.0.2'
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.company.p2onboarding"
@@ -25,6 +24,10 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    repositories {
+        mavenCentral()
+    }
+    namespace 'com.company.p2onboarding'
 }
 
 dependencies {
